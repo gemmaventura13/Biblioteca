@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProyectoBiblioteca.Properties
+namespace Biblioteca.Properties
 {
 
 
