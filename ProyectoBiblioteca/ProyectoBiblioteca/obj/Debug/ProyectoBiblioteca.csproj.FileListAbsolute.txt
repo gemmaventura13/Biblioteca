@@ -6,6 +6,7 @@ E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\Proyect
 E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.csproj.GenerateResource.Cache
 E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.exe
 E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.pdb
-E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\Biblioteca.Menu.resources
-E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\Biblioteca.Prestamos.resources
-E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\Biblioteca.RegistroCli.resources
+E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.FrmPrestamosExternos.resources
+E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.FrmRegistroCliente.resources
+E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.FrmMenu.resources
+E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.csprojResolveAssemblyReference.cache

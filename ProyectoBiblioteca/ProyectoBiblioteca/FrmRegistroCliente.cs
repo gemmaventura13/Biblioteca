@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Biblioteca
+namespace ProyectoBiblioteca
 {
-    public partial class RegistroCli : Form
+    public partial class FrmRegistroCliente : Form
     {
-        public RegistroCli()
+        public FrmRegistroCliente()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
-﻿namespace Biblioteca
+﻿namespace ProyectoBiblioteca
 {
-    partial class RegistroCli
+    partial class FrmRegistroCliente
     {
         /// <summary>
         /// Variable del diseñador requerida.
@@ -151,7 +151,7 @@
             // txtIdUsuario
             // 
             this.txtIdUsuario.Location = new System.Drawing.Point(131, 78);
-            this.txtIdUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIdUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.txtIdUsuario.Name = "txtIdUsuario";
             this.txtIdUsuario.Size = new System.Drawing.Size(128, 20);
             this.txtIdUsuario.TabIndex = 0;
@@ -160,7 +160,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(88, 114);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(267, 20);
             this.txtNombre.TabIndex = 10;
@@ -169,7 +169,7 @@
             // txtApellidos
             // 
             this.txtApellidos.Location = new System.Drawing.Point(97, 146);
-            this.txtApellidos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtApellidos.Margin = new System.Windows.Forms.Padding(2);
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(259, 20);
             this.txtApellidos.TabIndex = 11;
@@ -178,7 +178,7 @@
             // txtDireccion
             // 
             this.txtDireccion.Location = new System.Drawing.Point(97, 177);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(2);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(259, 20);
             this.txtDireccion.TabIndex = 12;
@@ -187,7 +187,7 @@
             // txtFechaNacimiento
             // 
             this.txtFechaNacimiento.Location = new System.Drawing.Point(180, 207);
-            this.txtFechaNacimiento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFechaNacimiento.Margin = new System.Windows.Forms.Padding(2);
             this.txtFechaNacimiento.Name = "txtFechaNacimiento";
             this.txtFechaNacimiento.Size = new System.Drawing.Size(175, 20);
             this.txtFechaNacimiento.TabIndex = 13;
@@ -196,7 +196,7 @@
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(63, 237);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(293, 20);
             this.txtEmail.TabIndex = 14;
@@ -205,7 +205,7 @@
             // txtTelefono
             // 
             this.txtTelefono.Location = new System.Drawing.Point(131, 269);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(114, 20);
             this.txtTelefono.TabIndex = 15;
@@ -225,7 +225,7 @@
             // txtEdad
             // 
             this.txtEdad.Location = new System.Drawing.Point(313, 269);
-            this.txtEdad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEdad.Margin = new System.Windows.Forms.Padding(2);
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.Size = new System.Drawing.Size(114, 20);
             this.txtEdad.TabIndex = 17;
@@ -255,10 +255,10 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImage = global::ProyectoBiblioteca.Properties.Resources.usuario_png1;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Image = global::ProyectoBiblioteca.Properties.Resources.usuario_png;
             this.pictureBox1.Location = new System.Drawing.Point(383, 116);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(215, 143);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -271,7 +271,7 @@
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
             this.btnGuardar.Location = new System.Drawing.Point(54, 313);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(104, 29);
             this.btnGuardar.TabIndex = 22;
@@ -285,7 +285,7 @@
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
             this.btnEliminar.Location = new System.Drawing.Point(162, 313);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(104, 29);
             this.btnEliminar.TabIndex = 23;
@@ -299,7 +299,7 @@
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
             this.btnCancelar.Location = new System.Drawing.Point(270, 313);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(104, 29);
             this.btnCancelar.TabIndex = 24;
@@ -313,7 +313,7 @@
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
             this.btnSalir.Location = new System.Drawing.Point(432, 313);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(104, 29);
             this.btnSalir.TabIndex = 25;
@@ -328,7 +328,7 @@
             "Femenino",
             "Masculino"});
             this.cmbSexo.Location = new System.Drawing.Point(495, 269);
-            this.cmbSexo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbSexo.Margin = new System.Windows.Forms.Padding(2);
             this.cmbSexo.Name = "cmbSexo";
             this.cmbSexo.Size = new System.Drawing.Size(113, 21);
             this.cmbSexo.TabIndex = 27;
@@ -348,7 +348,7 @@
             // 
             this.txtHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHora.Location = new System.Drawing.Point(521, 53);
-            this.txtHora.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtHora.Margin = new System.Windows.Forms.Padding(2);
             this.txtHora.Name = "txtHora";
             this.txtHora.Size = new System.Drawing.Size(87, 21);
             this.txtHora.TabIndex = 29;
@@ -358,7 +358,7 @@
             // 
             this.txtFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFecha.Location = new System.Drawing.Point(375, 78);
-            this.txtFecha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFecha.Margin = new System.Windows.Forms.Padding(2);
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.Size = new System.Drawing.Size(233, 21);
             this.txtFecha.TabIndex = 30;
@@ -398,7 +398,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RegistroCli";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de Clientes";

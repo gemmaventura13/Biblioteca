@@ -1,6 +1,6 @@
-﻿namespace Biblioteca
+﻿namespace ProyectoBiblioteca
 {
-    partial class Prestamos
+    partial class FrmPrestamosExternos
     {
         /// <summary>
         /// Required designer variable.

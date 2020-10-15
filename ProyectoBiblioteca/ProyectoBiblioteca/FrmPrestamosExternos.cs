@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Biblioteca
+namespace ProyectoBiblioteca
 {
-    public partial class Prestamos : Form
+    public partial class FrmPrestamosExternos : Form
     {
-        public Prestamos()
+        public FrmPrestamosExternos()
         {
             InitializeComponent();
         }

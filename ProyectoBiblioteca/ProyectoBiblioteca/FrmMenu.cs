@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
-namespace Biblioteca
+namespace ProyectoBiblioteca
 {
-    public partial class Menu : Form
+    public partial class FrmMenu : Form
     {
-        public Menu()
+        public FrmMenu()
         {
             InitializeComponent();
         }
@@ -23,27 +23,32 @@ namespace Biblioteca
             lblHora.Text = DateTime.Now.ToLongTimeString();
         }
 
-        private void librosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-          
-
-        }
-
-        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            RegistroCli registro = new RegistroCli();
-            registro.Show();
-        }
-
         private void prestamosInternosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Prestamos prestamosli = new Prestamos();
+            FrmPrestamosExternos prestamosli = new FrmPrestamosExternos();
             prestamosli.Show();
         }
 
-        private void prestamosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void librosToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        private void clientesToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FrmRegistroCliente registro = new FrmRegistroCliente();
+            registro.Show();
+        }
+
+        private void salirToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void préstamoExternoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPrestamosExternos prestamos = new FrmPrestamosExternos();
+            prestamos.Show();
         }
     }
 }
