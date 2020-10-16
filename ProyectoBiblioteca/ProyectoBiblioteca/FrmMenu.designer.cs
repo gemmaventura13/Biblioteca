@@ -61,6 +61,8 @@
             this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.préstamosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.devolucionesToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.librosToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.clientesToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -140,12 +142,15 @@
             this.devolucionesToolStripMenuItem2.Name = "devolucionesToolStripMenuItem2";
             this.devolucionesToolStripMenuItem2.Size = new System.Drawing.Size(124, 25);
             this.devolucionesToolStripMenuItem2.Text = "Devoluciones";
+            this.devolucionesToolStripMenuItem2.Click += new System.EventHandler(this.devolucionesToolStripMenuItem2_Click);
             // 
             // consultasToolStripMenuItem1
             // 
             this.consultasToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.préstamosToolStripMenuItem1,
-            this.devolucionesToolStripMenuItem3});
+            this.devolucionesToolStripMenuItem3,
+            this.librosToolStripMenuItem2,
+            this.clientesToolStripMenuItem3});
             this.consultasToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.consultasToolStripMenuItem1.Name = "consultasToolStripMenuItem1";
             this.consultasToolStripMenuItem1.Size = new System.Drawing.Size(95, 25);
@@ -322,6 +327,20 @@
             this.devolucionesToolStripMenuItem3.Text = "Devoluciones";
             this.devolucionesToolStripMenuItem3.Click += new System.EventHandler(this.devolucionesToolStripMenuItem3_Click);
             // 
+            // librosToolStripMenuItem2
+            // 
+            this.librosToolStripMenuItem2.Name = "librosToolStripMenuItem2";
+            this.librosToolStripMenuItem2.Size = new System.Drawing.Size(182, 26);
+            this.librosToolStripMenuItem2.Text = "Libros";
+            this.librosToolStripMenuItem2.Click += new System.EventHandler(this.librosToolStripMenuItem2_Click);
+            // 
+            // clientesToolStripMenuItem3
+            // 
+            this.clientesToolStripMenuItem3.Name = "clientesToolStripMenuItem3";
+            this.clientesToolStripMenuItem3.Size = new System.Drawing.Size(182, 26);
+            this.clientesToolStripMenuItem3.Text = "Clientes";
+            this.clientesToolStripMenuItem3.Click += new System.EventHandler(this.clientesToolStripMenuItem3_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -391,5 +410,7 @@
         private System.Windows.Forms.ToolStripMenuItem préstamosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem devolucionesToolStripMenuItem3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem librosToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem3;
     }
 }

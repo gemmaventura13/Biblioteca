@@ -81,5 +81,23 @@ namespace ProyectoBiblioteca
             FrmAcercaDe acerca = new FrmAcercaDe();
             acerca.Show();
         }
+
+        private void devolucionesToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FrmDevoluciones devoluciones = new FrmDevoluciones();
+            devoluciones.Show();
+        }
+
+        private void librosToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FrmConsultasLibros libro = new FrmConsultasLibros();
+            libro.Show();
+        }
+
+        private void clientesToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            FrmConsultasClientes cliente = new FrmConsultasClientes();
+            cliente.Show();
+        }
     }
 }

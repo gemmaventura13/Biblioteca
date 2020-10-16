@@ -163,6 +163,16 @@ namespace ProyectoBiblioteca.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LIBROS1_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("LIBROS1-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap libros2 {
             get {
                 object obj = ResourceManager.GetObject("libros2", resourceCulture);

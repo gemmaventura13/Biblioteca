@@ -45,7 +45,7 @@ namespace ProyectoBiblioteca
 
         private void Guardar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("¡Se han Guardado Los datos exitosamente!");
+            MessageBox.Show("¡Se han guardado Los datos exitosamente!");
             LimpiarCampos();
         }
 
@@ -93,6 +93,11 @@ namespace ProyectoBiblioteca
         private void TxtHora_TextChanged(object sender, EventArgs e)
         {
             TxtHora.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

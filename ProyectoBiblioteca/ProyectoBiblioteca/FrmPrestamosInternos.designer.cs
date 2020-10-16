@@ -248,6 +248,7 @@
             this.btnSalir.TabIndex = 84;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnCancelar
             // 
@@ -300,6 +301,7 @@
             this.Controls.Add(this.TxtNumPrestamo);
             this.Controls.Add(this.Fecha);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.MaximizeBox = false;
             this.Name = "FrmPrestamosInternos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PRÉSTAMOS INTERNOS";
