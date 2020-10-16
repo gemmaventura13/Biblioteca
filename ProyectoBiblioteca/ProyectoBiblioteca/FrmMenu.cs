@@ -31,7 +31,8 @@ namespace ProyectoBiblioteca
 
         private void librosToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            
+            FrmRegistroLibro libro = new FrmRegistroLibro();
+            libro.Show();
         }
 
         private void clientesToolStripMenuItem2_Click(object sender, EventArgs e)
@@ -49,6 +50,30 @@ namespace ProyectoBiblioteca
         {
             FrmPrestamosExternos prestamos = new FrmPrestamosExternos();
             prestamos.Show();
+        }
+
+        private void préstamosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmConsultasPrestamos prestamo = new FrmConsultasPrestamos();
+            prestamo.Show();
+        }
+
+        private void devolucionesToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            FrmConsultasDevoluciones devolucion = new FrmConsultasDevoluciones();
+            devolucion.Show();
+        }
+
+        private void préstamoInternoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPrestamosInternos prestamos = new FrmPrestamosInternos();
+            prestamos.Show();
+        }
+
+        private void reportesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmReportes reportes = new FrmReportes();
+            reportes.Show();
         }
     }
 }

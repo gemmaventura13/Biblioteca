@@ -63,6 +63,16 @@ namespace ProyectoBiblioteca.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap C53pSspXMAU6NEg {
+            get {
+                object obj = ResourceManager.GetObject("C53pSspXMAU6NEg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap libros {
             get {
                 object obj = ResourceManager.GetObject("libros", resourceCulture);
@@ -76,6 +86,26 @@ namespace ProyectoBiblioteca.Properties {
         internal static System.Drawing.Bitmap libros1 {
             get {
                 object obj = ResourceManager.GetObject("libros1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap libros2 {
+            get {
+                object obj = ResourceManager.GetObject("libros2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap libros3 {
+            get {
+                object obj = ResourceManager.GetObject("libros3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

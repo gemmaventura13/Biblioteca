@@ -51,7 +51,7 @@ namespace ProyectoBiblioteca
         {
             if (e.KeyChar == 13)
             {
-                txtFechaNacimiento.Focus();
+                txtFecha.Focus();
             }
         }
 
@@ -104,7 +104,6 @@ namespace ProyectoBiblioteca
                 txtNombre.Text = "";
                 txtApellidos.Text = "";
                 txtDireccion.Text = "";
-                txtFechaNacimiento.Text = "";
                 txtEmail.Text = "";
                 txtTelefono.Text = "";
                 txtEdad.Text = "";
@@ -118,7 +117,6 @@ namespace ProyectoBiblioteca
             txtNombre.Text = "";
             txtApellidos.Text = "";
             txtDireccion.Text = "";
-            txtFechaNacimiento.Text = "";
             txtEmail.Text = "";
             txtTelefono.Text = "";
             txtEdad.Text = "";

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenu));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.matenimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.librosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,6 +59,8 @@
             this.lblHora = new System.Windows.Forms.Label();
             this.HoraFecha = new System.Windows.Forms.Timer(this.components);
             this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.préstamosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.devolucionesToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -67,7 +68,8 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.White;
+            this.menuStrip1.BackColor = System.Drawing.Color.Black;
+            this.menuStrip1.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.matenimientoToolStripMenuItem,
             this.préstamosToolStripMenuItem,
@@ -80,7 +82,7 @@
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.menuStrip1.Size = new System.Drawing.Size(840, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(911, 27);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -89,21 +91,22 @@
             this.matenimientoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.librosToolStripMenuItem1,
             this.clientesToolStripMenuItem2});
+            this.matenimientoToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.matenimientoToolStripMenuItem.Name = "matenimientoToolStripMenuItem";
-            this.matenimientoToolStripMenuItem.Size = new System.Drawing.Size(94, 22);
+            this.matenimientoToolStripMenuItem.Size = new System.Drawing.Size(129, 25);
             this.matenimientoToolStripMenuItem.Text = "Matenimiento";
             // 
             // librosToolStripMenuItem1
             // 
             this.librosToolStripMenuItem1.Name = "librosToolStripMenuItem1";
-            this.librosToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.librosToolStripMenuItem1.Size = new System.Drawing.Size(139, 26);
             this.librosToolStripMenuItem1.Text = "Libros";
             this.librosToolStripMenuItem1.Click += new System.EventHandler(this.librosToolStripMenuItem1_Click);
             // 
             // clientesToolStripMenuItem2
             // 
             this.clientesToolStripMenuItem2.Name = "clientesToolStripMenuItem2";
-            this.clientesToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.clientesToolStripMenuItem2.Size = new System.Drawing.Size(139, 26);
             this.clientesToolStripMenuItem2.Text = "Clientes";
             this.clientesToolStripMenuItem2.Click += new System.EventHandler(this.clientesToolStripMenuItem2_Click);
             // 
@@ -112,51 +115,62 @@
             this.préstamosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.préstamoInternoToolStripMenuItem,
             this.préstamoExternoToolStripMenuItem});
+            this.préstamosToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.préstamosToolStripMenuItem.Name = "préstamosToolStripMenuItem";
-            this.préstamosToolStripMenuItem.Size = new System.Drawing.Size(74, 22);
+            this.préstamosToolStripMenuItem.Size = new System.Drawing.Size(101, 25);
             this.préstamosToolStripMenuItem.Text = "Préstamos";
             // 
             // préstamoInternoToolStripMenuItem
             // 
             this.préstamoInternoToolStripMenuItem.Name = "préstamoInternoToolStripMenuItem";
-            this.préstamoInternoToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.préstamoInternoToolStripMenuItem.Size = new System.Drawing.Size(217, 26);
             this.préstamoInternoToolStripMenuItem.Text = "Préstamo Interno";
+            this.préstamoInternoToolStripMenuItem.Click += new System.EventHandler(this.préstamoInternoToolStripMenuItem_Click);
             // 
             // préstamoExternoToolStripMenuItem
             // 
             this.préstamoExternoToolStripMenuItem.Name = "préstamoExternoToolStripMenuItem";
-            this.préstamoExternoToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.préstamoExternoToolStripMenuItem.Size = new System.Drawing.Size(217, 26);
             this.préstamoExternoToolStripMenuItem.Text = "Préstamo Externo";
             this.préstamoExternoToolStripMenuItem.Click += new System.EventHandler(this.préstamoExternoToolStripMenuItem_Click);
             // 
             // devolucionesToolStripMenuItem2
             // 
+            this.devolucionesToolStripMenuItem2.ForeColor = System.Drawing.Color.White;
             this.devolucionesToolStripMenuItem2.Name = "devolucionesToolStripMenuItem2";
-            this.devolucionesToolStripMenuItem2.Size = new System.Drawing.Size(90, 22);
+            this.devolucionesToolStripMenuItem2.Size = new System.Drawing.Size(124, 25);
             this.devolucionesToolStripMenuItem2.Text = "Devoluciones";
             // 
             // consultasToolStripMenuItem1
             // 
+            this.consultasToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.préstamosToolStripMenuItem1,
+            this.devolucionesToolStripMenuItem3});
+            this.consultasToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.consultasToolStripMenuItem1.Name = "consultasToolStripMenuItem1";
-            this.consultasToolStripMenuItem1.Size = new System.Drawing.Size(71, 22);
+            this.consultasToolStripMenuItem1.Size = new System.Drawing.Size(95, 25);
             this.consultasToolStripMenuItem1.Text = "Consultas";
             // 
             // reportesToolStripMenuItem
             // 
+            this.reportesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 22);
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(89, 25);
             this.reportesToolStripMenuItem.Text = "Reportes";
+            this.reportesToolStripMenuItem.Click += new System.EventHandler(this.reportesToolStripMenuItem_Click);
             // 
             // acercaDeToolStripMenuItem1
             // 
+            this.acercaDeToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
             this.acercaDeToolStripMenuItem1.Name = "acercaDeToolStripMenuItem1";
-            this.acercaDeToolStripMenuItem1.Size = new System.Drawing.Size(72, 22);
+            this.acercaDeToolStripMenuItem1.Size = new System.Drawing.Size(100, 25);
             this.acercaDeToolStripMenuItem1.Text = "Acerca De";
             // 
             // salirToolStripMenuItem3
             // 
+            this.salirToolStripMenuItem3.ForeColor = System.Drawing.Color.White;
             this.salirToolStripMenuItem3.Name = "salirToolStripMenuItem3";
-            this.salirToolStripMenuItem3.Size = new System.Drawing.Size(41, 22);
+            this.salirToolStripMenuItem3.Size = new System.Drawing.Size(54, 25);
             this.salirToolStripMenuItem3.Text = "Salir";
             this.salirToolStripMenuItem3.Click += new System.EventHandler(this.salirToolStripMenuItem3_Click);
             // 
@@ -274,11 +288,11 @@
             // 
             this.lblHora.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblHora.AutoSize = true;
-            this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.Location = new System.Drawing.Point(201, 373);
+            this.lblHora.Font = new System.Drawing.Font("Consolas", 50.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.Location = new System.Drawing.Point(236, 355);
             this.lblHora.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(177, 76);
+            this.lblHora.Size = new System.Drawing.Size(182, 79);
             this.lblHora.TabIndex = 3;
             this.lblHora.Text = "Hora";
             // 
@@ -293,13 +307,28 @@
             this.salirToolStripMenuItem1.Size = new System.Drawing.Size(41, 22);
             this.salirToolStripMenuItem1.Text = "Salir";
             // 
+            // préstamosToolStripMenuItem1
+            // 
+            this.préstamosToolStripMenuItem1.Name = "préstamosToolStripMenuItem1";
+            this.préstamosToolStripMenuItem1.Size = new System.Drawing.Size(182, 26);
+            this.préstamosToolStripMenuItem1.Text = "Préstamos";
+            this.préstamosToolStripMenuItem1.Click += new System.EventHandler(this.préstamosToolStripMenuItem1_Click);
+            // 
+            // devolucionesToolStripMenuItem3
+            // 
+            this.devolucionesToolStripMenuItem3.Name = "devolucionesToolStripMenuItem3";
+            this.devolucionesToolStripMenuItem3.Size = new System.Drawing.Size(182, 26);
+            this.devolucionesToolStripMenuItem3.Text = "Devoluciones";
+            this.devolucionesToolStripMenuItem3.Click += new System.EventHandler(this.devolucionesToolStripMenuItem3_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(267, 142);
+            this.pictureBox1.BackgroundImage = global::ProyectoBiblioteca.Properties.Resources.libros3;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(298, 90);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(313, 228);
+            this.pictureBox1.Size = new System.Drawing.Size(314, 262);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -309,14 +338,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.ClientSize = new System.Drawing.Size(840, 525);
+            this.ClientSize = new System.Drawing.Size(911, 525);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblHora);
             this.Controls.Add(this.menuStrip1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Menu";
+            this.Text = "MENÚ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -347,7 +376,6 @@
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Timer HoraFecha;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem matenimientoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem librosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem2;
@@ -359,5 +387,8 @@
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem préstamosToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem devolucionesToolStripMenuItem3;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

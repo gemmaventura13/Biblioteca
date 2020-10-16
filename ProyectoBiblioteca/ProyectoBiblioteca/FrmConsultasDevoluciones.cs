@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ProyectoBiblioteca
 {
-    public partial class Form1 : Form
+    public partial class FrmConsultasDevoluciones : Form
     {
-        public Form1()
+        public FrmConsultasDevoluciones()
         {
             InitializeComponent();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

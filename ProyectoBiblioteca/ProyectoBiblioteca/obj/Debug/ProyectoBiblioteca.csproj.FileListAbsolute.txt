@@ -1,7 +1,6 @@
 E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\bin\Debug\ProyectoBiblioteca.exe.config
 E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\bin\Debug\ProyectoBiblioteca.exe
 E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\bin\Debug\ProyectoBiblioteca.pdb
-E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Form1.resources
 E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.Properties.Resources.resources
 E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.csproj.GenerateResource.Cache
 E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.exe
@@ -10,3 +9,8 @@ E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\Proyect
 E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.FrmRegistroCliente.resources
 E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.FrmMenu.resources
 E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.csprojResolveAssemblyReference.cache
+E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.FrmConsultasDevoluciones.resources
+E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.FrmConsultasPrestamos.resources
+E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.FrmRegistroLibro.resources
+E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.FrmPrestamosInternos.resources
+E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.FrmReportes.resources
