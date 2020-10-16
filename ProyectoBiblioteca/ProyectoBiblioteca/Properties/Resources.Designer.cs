@@ -63,9 +63,79 @@ namespace ProyectoBiblioteca.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bandera {
+            get {
+                object obj = ResourceManager.GetObject("bandera", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap C53pSspXMAU6NEg {
             get {
                 object obj = ResourceManager.GetObject("C53pSspXMAU6NEg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap circle_cropped {
+            get {
+                object obj = ResourceManager.GetObject("circle-cropped", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap circle_cropped__1_ {
+            get {
+                object obj = ResourceManager.GetObject("circle-cropped (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap circle_cropped__2_ {
+            get {
+                object obj = ResourceManager.GetObject("circle-cropped (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap circle_cropped__3_ {
+            get {
+                object obj = ResourceManager.GetObject("circle-cropped (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap circle_cropped__4_ {
+            get {
+                object obj = ResourceManager.GetObject("circle-cropped (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap circle_cropped__5_ {
+            get {
+                object obj = ResourceManager.GetObject("circle-cropped (5)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

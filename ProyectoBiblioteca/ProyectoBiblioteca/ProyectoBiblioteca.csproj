@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAcercaDe.designer.cs">
+      <DependentUpon>FrmAcercaDe.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPrestamosInternos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     <Compile Include="FrmRegistroCliente.designer.cs">
       <DependentUpon>FrmRegistroCliente.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmAcercaDe.resx">
+      <DependentUpon>FrmAcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPrestamosInternos.resx">
       <DependentUpon>FrmPrestamosInternos.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +158,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\C53pSspXMAU6NEg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle-cropped %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bandera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle-cropped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle-cropped %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle-cropped %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle-cropped %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle-cropped %284%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

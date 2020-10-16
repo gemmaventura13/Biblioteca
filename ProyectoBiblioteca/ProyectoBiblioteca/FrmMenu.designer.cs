@@ -165,6 +165,7 @@
             this.acercaDeToolStripMenuItem1.Name = "acercaDeToolStripMenuItem1";
             this.acercaDeToolStripMenuItem1.Size = new System.Drawing.Size(100, 25);
             this.acercaDeToolStripMenuItem1.Text = "Acerca De";
+            this.acercaDeToolStripMenuItem1.Click += new System.EventHandler(this.acercaDeToolStripMenuItem1_Click);
             // 
             // salirToolStripMenuItem3
             // 
