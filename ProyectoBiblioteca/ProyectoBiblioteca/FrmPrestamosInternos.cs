@@ -43,13 +43,7 @@ namespace ProyectoBiblioteca
             TxtHora.Text = DateTime.Now.ToString("HH:mm:ss");
         }
 
-        private void Guardar_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("¡Se han guardado Los datos exitosamente!");
-            LimpiarCampos();
-        }
-
-        private void Editar_Click(object sender, EventArgs e)
+        /*private void Editar_Click(object sender, EventArgs e)
         {
             string mensaje = "Usted esta apunto de editar los datos ¿Esta seguro de que quiere continuar?";
             string tituloventana = "Editar Datos";
@@ -57,7 +51,7 @@ namespace ProyectoBiblioteca
             DialogResult result = MessageBox.Show(mensaje, tituloventana, botones, MessageBoxIcon.Question);
             MessageBox.Show("¡Se han Actualizado los datos!");
             LimpiarCampos();
-        }
+        }*/
 
         private void Eliminar_Click(object sender, EventArgs e)
         {
@@ -79,17 +73,6 @@ namespace ProyectoBiblioteca
             }
         }
 
-        private void Cancelar_Click(object sender, EventArgs e)
-        {
-            LimpiarCampos();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-           
-        }
-
         private void TxtHora_TextChanged(object sender, EventArgs e)
         {
             TxtHora.Text = DateTime.Now.ToString("HH:mm:ss");
@@ -98,6 +81,17 @@ namespace ProyectoBiblioteca
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("¡Se han guardado Los datos exitosamente!");
+            LimpiarCampos();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos();
         }
     }
 }

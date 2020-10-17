@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.dgvPrestamo = new System.Windows.Forms.DataGridView();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnModificar = new System.Windows.Forms.Button();
             this.Folio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreLibro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaRetiro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaDevolucion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CondicionesLibro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPrestamo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,14 +72,14 @@
             this.dgvPrestamo.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvPrestamo.BackgroundColor = System.Drawing.Color.DarkCyan;
             this.dgvPrestamo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPrestamo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvPrestamo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvPrestamo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPrestamo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Folio,
@@ -95,6 +95,42 @@
             this.dgvPrestamo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPrestamo.Size = new System.Drawing.Size(651, 432);
             this.dgvPrestamo.TabIndex = 3;
+            // 
+            // Folio
+            // 
+            this.Folio.HeaderText = "FOLIO";
+            this.Folio.Name = "Folio";
+            this.Folio.Width = 63;
+            // 
+            // NombreCliente
+            // 
+            this.NombreCliente.HeaderText = "NOMBRE DEL CLIENTE";
+            this.NombreCliente.Name = "NombreCliente";
+            this.NombreCliente.Width = 96;
+            // 
+            // NombreLibro
+            // 
+            this.NombreLibro.HeaderText = "NOMBRE DEL LIBRO";
+            this.NombreLibro.Name = "NombreLibro";
+            this.NombreLibro.Width = 96;
+            // 
+            // FechaRetiro
+            // 
+            this.FechaRetiro.HeaderText = "FECHA DE RETIRO";
+            this.FechaRetiro.Name = "FechaRetiro";
+            this.FechaRetiro.Width = 114;
+            // 
+            // FechaDevolucion
+            // 
+            this.FechaDevolucion.HeaderText = "FECHA DE DEVOLUCIÓN";
+            this.FechaDevolucion.Name = "FechaDevolucion";
+            this.FechaDevolucion.Width = 143;
+            // 
+            // CondicionesLibro
+            // 
+            this.CondicionesLibro.HeaderText = "CONDICIONES DEL LIBRO";
+            this.CondicionesLibro.Name = "CondicionesLibro";
+            this.CondicionesLibro.Width = 122;
             // 
             // btnSalir
             // 
@@ -122,6 +158,7 @@
             this.btnEliminar.TabIndex = 5;
             this.btnEliminar.Text = "ELIMINAR";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnModificar
             // 
@@ -135,40 +172,6 @@
             this.btnModificar.TabIndex = 6;
             this.btnModificar.Text = "MODIFICAR";
             this.btnModificar.UseVisualStyleBackColor = false;
-            // 
-            // Folio
-            // 
-            this.Folio.HeaderText = "FOLIO";
-            this.Folio.Name = "Folio";
-            this.Folio.Width = 65;
-            // 
-            // NombreCliente
-            // 
-            this.NombreCliente.HeaderText = "NOMBRE DEL CLIENTE";
-            this.NombreCliente.Name = "NombreCliente";
-            // 
-            // NombreLibro
-            // 
-            this.NombreLibro.HeaderText = "NOMBRE DEL LIBRO";
-            this.NombreLibro.Name = "NombreLibro";
-            // 
-            // FechaRetiro
-            // 
-            this.FechaRetiro.HeaderText = "FECHA DE RETIRO";
-            this.FechaRetiro.Name = "FechaRetiro";
-            this.FechaRetiro.Width = 116;
-            // 
-            // FechaDevolucion
-            // 
-            this.FechaDevolucion.HeaderText = "FECHA DE DEVOLUCIÓN";
-            this.FechaDevolucion.Name = "FechaDevolucion";
-            this.FechaDevolucion.Width = 147;
-            // 
-            // CondicionesLibro
-            // 
-            this.CondicionesLibro.HeaderText = "CONDICIONES DEL LIBRO";
-            this.CondicionesLibro.Name = "CondicionesLibro";
-            this.CondicionesLibro.Width = 124;
             // 
             // FrmConsultasPrestamos
             // 

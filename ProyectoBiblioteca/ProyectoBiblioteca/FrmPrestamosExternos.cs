@@ -36,19 +36,19 @@ namespace ProyectoBiblioteca
 
         private void Guardar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("¡Se han Guardado Los datos exitosamente!");
+            MessageBox.Show("¡Se han guardado Los datos exitosamente!");
             LimpiarCampos();
         }
 
-        private void Editar_Click(object sender, EventArgs e)
+        /*private void Editar_Click(object sender, EventArgs e)
         {
-            string mensaje = "Usted esta apunto de editar los datos ¿Esta seguro de que quiere continuar?";
+            string mensaje = "Usted está apunto de editar los datos ¿Esta seguro de que quiere continuar?";
             string tituloventana = "Editar Datos";
             MessageBoxButtons botones = MessageBoxButtons.YesNo;
             DialogResult result = MessageBox.Show(mensaje, tituloventana, botones, MessageBoxIcon.Question);
             MessageBox.Show("¡Se han Actualizado los datos!");
             LimpiarCampos();
-        }
+        }*/
 
         private void Eliminar_Click(object sender, EventArgs e)
         {

@@ -26,5 +26,15 @@ namespace ProyectoBiblioteca
         {
             this.Close();
         }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Se han guardado los datos correctamente");
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Has cancelado el proceso");
+        }
     }
 }

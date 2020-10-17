@@ -26,5 +26,10 @@ namespace ProyectoBiblioteca
         {
             this.Close();
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Se ha eliminado la información del cliente");
+        }
     }
 }
