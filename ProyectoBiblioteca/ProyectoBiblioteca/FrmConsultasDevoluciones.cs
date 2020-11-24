@@ -22,9 +22,9 @@ namespace ProyectoBiblioteca
             this.Close();
         }
 
-        private void btnEliminar_Click(object sender, EventArgs e)
+        private void btnCargar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Se ha eliminado la información de la devolución");
+
         }
     }
 }
