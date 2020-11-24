@@ -149,6 +149,7 @@
     <Compile Include="FrmRegistroCliente.designer.cs">
       <DependentUpon>FrmRegistroCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Validacion.cs" />
     <EmbeddedResource Include="FrmConsultasClientes.resx">
       <DependentUpon>FrmConsultasClientes.cs</DependentUpon>
     </EmbeddedResource>
