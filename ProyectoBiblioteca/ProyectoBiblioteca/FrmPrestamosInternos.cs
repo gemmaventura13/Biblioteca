@@ -27,8 +27,7 @@ namespace ProyectoBiblioteca
             TxtNumPrestamo.Text = "";
             TxtHora.Text = "";
             FechaSelector.Text = "";
-            SiDevolucion.Checked = false;
-            NoDevolucion.Checked = false;
+            
             
             TxtIdCliente.Focus();
         }
