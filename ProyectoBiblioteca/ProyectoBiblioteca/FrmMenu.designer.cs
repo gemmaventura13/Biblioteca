@@ -64,6 +64,10 @@
             this.HoraFecha = new System.Windows.Forms.Timer(this.components);
             this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.reporteVentaDeLibroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.préstamoInternoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.préstamoExternoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporteDeLecturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -101,14 +105,14 @@
             // librosToolStripMenuItem1
             // 
             this.librosToolStripMenuItem1.Name = "librosToolStripMenuItem1";
-            this.librosToolStripMenuItem1.Size = new System.Drawing.Size(152, 26);
+            this.librosToolStripMenuItem1.Size = new System.Drawing.Size(145, 26);
             this.librosToolStripMenuItem1.Text = "Libros";
             this.librosToolStripMenuItem1.Click += new System.EventHandler(this.librosToolStripMenuItem1_Click);
             // 
             // clientesToolStripMenuItem2
             // 
             this.clientesToolStripMenuItem2.Name = "clientesToolStripMenuItem2";
-            this.clientesToolStripMenuItem2.Size = new System.Drawing.Size(152, 26);
+            this.clientesToolStripMenuItem2.Size = new System.Drawing.Size(145, 26);
             this.clientesToolStripMenuItem2.Text = "Usuarios";
             this.clientesToolStripMenuItem2.Click += new System.EventHandler(this.clientesToolStripMenuItem2_Click);
             // 
@@ -186,6 +190,11 @@
             // 
             // reportesToolStripMenuItem
             // 
+            this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reporteVentaDeLibroToolStripMenuItem,
+            this.préstamoInternoToolStripMenuItem1,
+            this.préstamoExternoToolStripMenuItem1,
+            this.reporteDeLecturaToolStripMenuItem});
             this.reportesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(89, 25);
@@ -353,6 +362,30 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
+            // reporteVentaDeLibroToolStripMenuItem
+            // 
+            this.reporteVentaDeLibroToolStripMenuItem.Name = "reporteVentaDeLibroToolStripMenuItem";
+            this.reporteVentaDeLibroToolStripMenuItem.Size = new System.Drawing.Size(223, 26);
+            this.reporteVentaDeLibroToolStripMenuItem.Text = "Venta de libros";
+            // 
+            // préstamoInternoToolStripMenuItem1
+            // 
+            this.préstamoInternoToolStripMenuItem1.Name = "préstamoInternoToolStripMenuItem1";
+            this.préstamoInternoToolStripMenuItem1.Size = new System.Drawing.Size(223, 26);
+            this.préstamoInternoToolStripMenuItem1.Text = "Préstamo interno";
+            // 
+            // préstamoExternoToolStripMenuItem1
+            // 
+            this.préstamoExternoToolStripMenuItem1.Name = "préstamoExternoToolStripMenuItem1";
+            this.préstamoExternoToolStripMenuItem1.Size = new System.Drawing.Size(223, 26);
+            this.préstamoExternoToolStripMenuItem1.Text = "Préstamo externo";
+            // 
+            // reporteDeLecturaToolStripMenuItem
+            // 
+            this.reporteDeLecturaToolStripMenuItem.Name = "reporteDeLecturaToolStripMenuItem";
+            this.reporteDeLecturaToolStripMenuItem.Size = new System.Drawing.Size(223, 26);
+            this.reporteDeLecturaToolStripMenuItem.Text = "Reporte de lectura";
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -412,5 +445,9 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem librosToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem reporteVentaDeLibroToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem préstamoInternoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem préstamoExternoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem reporteDeLecturaToolStripMenuItem;
     }
 }
