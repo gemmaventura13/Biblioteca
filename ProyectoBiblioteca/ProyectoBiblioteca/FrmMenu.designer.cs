@@ -100,27 +100,15 @@
             // librosToolStripMenuItem1
             // 
             this.librosToolStripMenuItem1.Name = "librosToolStripMenuItem1";
-
             this.librosToolStripMenuItem1.Size = new System.Drawing.Size(180, 36);
-
-            this.librosToolStripMenuItem1.Size = new System.Drawing.Size(169, 36);
-            this.librosToolStripMenuItem1.Size = new System.Drawing.Size(145, 26);
-
             this.librosToolStripMenuItem1.Text = "Libros";
             this.librosToolStripMenuItem1.Click += new System.EventHandler(this.librosToolStripMenuItem1_Click);
             // 
             // clientesToolStripMenuItem2
             // 
             this.clientesToolStripMenuItem2.Name = "clientesToolStripMenuItem2";
-
             this.clientesToolStripMenuItem2.Size = new System.Drawing.Size(180, 36);
             this.clientesToolStripMenuItem2.Text = "Clientes";
-
-            this.clientesToolStripMenuItem2.Size = new System.Drawing.Size(169, 36);
-            this.clientesToolStripMenuItem2.Text = "Cliente";
-            this.clientesToolStripMenuItem2.Size = new System.Drawing.Size(145, 26);
-            this.clientesToolStripMenuItem2.Text = "Usuarios";
-
             this.clientesToolStripMenuItem2.Click += new System.EventHandler(this.clientesToolStripMenuItem2_Click);
             // 
             // préstamosToolStripMenuItem
