@@ -34,8 +34,6 @@
             this.librosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.préstamosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.préstamoInternoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.préstamoExternoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.devolucionesToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.préstamosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,6 +41,8 @@
             this.librosToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.préstamoInternoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporteDeLecturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,10 +64,6 @@
             this.HoraFecha = new System.Windows.Forms.Timer(this.components);
             this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.reporteVentaDeLibroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.préstamoInternoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.préstamoExternoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.reporteDeLecturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -104,43 +100,24 @@
             // librosToolStripMenuItem1
             // 
             this.librosToolStripMenuItem1.Name = "librosToolStripMenuItem1";
-            this.librosToolStripMenuItem1.Size = new System.Drawing.Size(169, 36);
-            this.librosToolStripMenuItem1.Size = new System.Drawing.Size(145, 26);
+            this.librosToolStripMenuItem1.Size = new System.Drawing.Size(180, 36);
             this.librosToolStripMenuItem1.Text = "Libros";
             this.librosToolStripMenuItem1.Click += new System.EventHandler(this.librosToolStripMenuItem1_Click);
             // 
             // clientesToolStripMenuItem2
             // 
             this.clientesToolStripMenuItem2.Name = "clientesToolStripMenuItem2";
-            this.clientesToolStripMenuItem2.Size = new System.Drawing.Size(169, 36);
-            this.clientesToolStripMenuItem2.Text = "Cliente";
-            this.clientesToolStripMenuItem2.Size = new System.Drawing.Size(145, 26);
-            this.clientesToolStripMenuItem2.Text = "Usuarios";
+            this.clientesToolStripMenuItem2.Size = new System.Drawing.Size(180, 36);
+            this.clientesToolStripMenuItem2.Text = "Clientes";
             this.clientesToolStripMenuItem2.Click += new System.EventHandler(this.clientesToolStripMenuItem2_Click);
             // 
             // préstamosToolStripMenuItem
             // 
-            this.préstamosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.préstamoInternoToolStripMenuItem,
-            this.préstamoExternoToolStripMenuItem});
             this.préstamosToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.préstamosToolStripMenuItem.Name = "préstamosToolStripMenuItem";
-            this.préstamosToolStripMenuItem.Size = new System.Drawing.Size(145, 36);
-            this.préstamosToolStripMenuItem.Text = "Préstamos";
-            // 
-            // préstamoInternoToolStripMenuItem
-            // 
-            this.préstamoInternoToolStripMenuItem.Name = "préstamoInternoToolStripMenuItem";
-            this.préstamoInternoToolStripMenuItem.Size = new System.Drawing.Size(292, 36);
-            this.préstamoInternoToolStripMenuItem.Text = "Préstamo Interno";
-            this.préstamoInternoToolStripMenuItem.Click += new System.EventHandler(this.préstamoInternoToolStripMenuItem_Click);
-            // 
-            // préstamoExternoToolStripMenuItem
-            // 
-            this.préstamoExternoToolStripMenuItem.Name = "préstamoExternoToolStripMenuItem";
-            this.préstamoExternoToolStripMenuItem.Size = new System.Drawing.Size(292, 36);
-            this.préstamoExternoToolStripMenuItem.Text = "Préstamo Externo";
-            this.préstamoExternoToolStripMenuItem.Click += new System.EventHandler(this.préstamoExternoToolStripMenuItem_Click);
+            this.préstamosToolStripMenuItem.Size = new System.Drawing.Size(153, 36);
+            this.préstamosToolStripMenuItem.Text = "Préstamos ";
+            this.préstamosToolStripMenuItem.Click += new System.EventHandler(this.préstamosToolStripMenuItem_Click);
             // 
             // devolucionesToolStripMenuItem2
             // 
@@ -193,15 +170,25 @@
             // reportesToolStripMenuItem
             // 
             this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.reporteVentaDeLibroToolStripMenuItem,
             this.préstamoInternoToolStripMenuItem1,
-            this.préstamoExternoToolStripMenuItem1,
             this.reporteDeLecturaToolStripMenuItem});
             this.reportesToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(128, 36);
             this.reportesToolStripMenuItem.Text = "Reportes";
             this.reportesToolStripMenuItem.Click += new System.EventHandler(this.reportesToolStripMenuItem_Click);
+            // 
+            // préstamoInternoToolStripMenuItem1
+            // 
+            this.préstamoInternoToolStripMenuItem1.Name = "préstamoInternoToolStripMenuItem1";
+            this.préstamoInternoToolStripMenuItem1.Size = new System.Drawing.Size(302, 36);
+            this.préstamoInternoToolStripMenuItem1.Text = "Préstamo";
+            // 
+            // reporteDeLecturaToolStripMenuItem
+            // 
+            this.reporteDeLecturaToolStripMenuItem.Name = "reporteDeLecturaToolStripMenuItem";
+            this.reporteDeLecturaToolStripMenuItem.Size = new System.Drawing.Size(302, 36);
+            this.reporteDeLecturaToolStripMenuItem.Text = "Reporte de lectura";
             // 
             // acercaDeToolStripMenuItem1
             // 
@@ -364,30 +351,6 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // reporteVentaDeLibroToolStripMenuItem
-            // 
-            this.reporteVentaDeLibroToolStripMenuItem.Name = "reporteVentaDeLibroToolStripMenuItem";
-            this.reporteVentaDeLibroToolStripMenuItem.Size = new System.Drawing.Size(223, 26);
-            this.reporteVentaDeLibroToolStripMenuItem.Text = "Venta de libros";
-            // 
-            // préstamoInternoToolStripMenuItem1
-            // 
-            this.préstamoInternoToolStripMenuItem1.Name = "préstamoInternoToolStripMenuItem1";
-            this.préstamoInternoToolStripMenuItem1.Size = new System.Drawing.Size(223, 26);
-            this.préstamoInternoToolStripMenuItem1.Text = "Préstamo interno";
-            // 
-            // préstamoExternoToolStripMenuItem1
-            // 
-            this.préstamoExternoToolStripMenuItem1.Name = "préstamoExternoToolStripMenuItem1";
-            this.préstamoExternoToolStripMenuItem1.Size = new System.Drawing.Size(223, 26);
-            this.préstamoExternoToolStripMenuItem1.Text = "Préstamo externo";
-            // 
-            // reporteDeLecturaToolStripMenuItem
-            // 
-            this.reporteDeLecturaToolStripMenuItem.Name = "reporteDeLecturaToolStripMenuItem";
-            this.reporteDeLecturaToolStripMenuItem.Size = new System.Drawing.Size(223, 26);
-            this.reporteDeLecturaToolStripMenuItem.Text = "Reporte de lectura";
-            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -434,8 +397,6 @@
         private System.Windows.Forms.ToolStripMenuItem librosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem préstamosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem préstamoInternoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem préstamoExternoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem devolucionesToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
@@ -446,9 +407,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStripMenuItem librosToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem clientesToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem reporteVentaDeLibroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem préstamoInternoToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem préstamoExternoToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem reporteDeLecturaToolStripMenuItem;
     }
 }
