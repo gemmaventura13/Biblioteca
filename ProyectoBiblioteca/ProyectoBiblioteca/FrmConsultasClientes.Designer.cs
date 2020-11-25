@@ -52,9 +52,10 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(734, 149);
+            this.btnSalir.Location = new System.Drawing.Point(1101, 229);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(104, 38);
+            this.btnSalir.Size = new System.Drawing.Size(156, 58);
             this.btnSalir.TabIndex = 22;
             this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -86,66 +87,67 @@
             this.Edad,
             this.Sexo});
             this.dgvDevolucion.EnableHeadersVisualStyles = false;
-            this.dgvDevolucion.Location = new System.Drawing.Point(40, 105);
+            this.dgvDevolucion.Location = new System.Drawing.Point(60, 162);
+            this.dgvDevolucion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvDevolucion.Name = "dgvDevolucion";
             this.dgvDevolucion.RowHeadersVisible = false;
             this.dgvDevolucion.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDevolucion.Size = new System.Drawing.Size(651, 432);
+            this.dgvDevolucion.Size = new System.Drawing.Size(976, 665);
             this.dgvDevolucion.TabIndex = 21;
             // 
             // IdCliente
             // 
             this.IdCliente.HeaderText = "ID CLIENTE";
             this.IdCliente.Name = "IdCliente";
-            this.IdCliente.Width = 83;
+            this.IdCliente.Width = 115;
             // 
             // NombreCliente
             // 
             this.NombreCliente.HeaderText = "NOMBRE";
             this.NombreCliente.Name = "NombreCliente";
-            this.NombreCliente.Width = 81;
+            this.NombreCliente.Width = 109;
             // 
             // ApellidoCliente
             // 
             this.ApellidoCliente.HeaderText = "APELLIDO";
             this.ApellidoCliente.Name = "ApellidoCliente";
-            this.ApellidoCliente.Width = 85;
+            this.ApellidoCliente.Width = 115;
             // 
             // Direccion
             // 
             this.Direccion.HeaderText = "DIRECCIÓN";
             this.Direccion.Name = "Direccion";
-            this.Direccion.Width = 91;
+            this.Direccion.Width = 127;
             // 
             // FechaNacimiento
             // 
             this.FechaNacimiento.HeaderText = "FECHA DE NACIMIENTO";
             this.FechaNacimiento.Name = "FechaNacimiento";
-            this.FechaNacimiento.Width = 146;
+            this.FechaNacimiento.Width = 211;
             // 
             // Email
             // 
             this.Email.HeaderText = "EMAIL";
             this.Email.Name = "Email";
-            this.Email.Width = 66;
+            this.Email.Width = 86;
             // 
             // NumeroTelefono
             // 
             this.NumeroTelefono.HeaderText = "NÚMERO DE TELÉFONO";
             this.NumeroTelefono.Name = "NumeroTelefono";
-            this.NumeroTelefono.Width = 147;
+            this.NumeroTelefono.Width = 209;
             // 
             // Edad
             // 
             this.Edad.HeaderText = "EDAD";
             this.Edad.Name = "Edad";
-            this.Edad.Width = 62;
+            this.Edad.Width = 82;
             // 
             // Sexo
             // 
             this.Sexo.HeaderText = "SEXO";
             this.Sexo.Name = "Sexo";
-            this.Sexo.Width = 60;
+            this.Sexo.Width = 78;
             // 
             // btnBuscar
             // 
@@ -153,9 +155,10 @@
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Location = new System.Drawing.Point(587, 37);
+            this.btnBuscar.Location = new System.Drawing.Point(880, 57);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(104, 38);
+            this.btnBuscar.Size = new System.Drawing.Size(156, 58);
             this.btnBuscar.TabIndex = 20;
             this.btnBuscar.Text = "BUSCAR";
             this.btnBuscar.UseVisualStyleBackColor = false;
@@ -163,9 +166,10 @@
             // txtBuscar
             // 
             this.txtBuscar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscar.Location = new System.Drawing.Point(40, 42);
+            this.txtBuscar.Location = new System.Drawing.Point(60, 65);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(512, 27);
+            this.txtBuscar.Size = new System.Drawing.Size(766, 36);
             this.txtBuscar.TabIndex = 19;
             this.txtBuscar.Text = "ESCRIBE EL ID DEL CLIENTE O EL NOMBRE";
             // 
@@ -175,24 +179,26 @@
             this.btnCargar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCargar.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargar.ForeColor = System.Drawing.Color.White;
-            this.btnCargar.Location = new System.Drawing.Point(734, 105);
+            this.btnCargar.Location = new System.Drawing.Point(1101, 162);
+            this.btnCargar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCargar.Name = "btnCargar";
-            this.btnCargar.Size = new System.Drawing.Size(104, 38);
+            this.btnCargar.Size = new System.Drawing.Size(156, 58);
             this.btnCargar.TabIndex = 25;
             this.btnCargar.Text = "RECARGAR";
             this.btnCargar.UseVisualStyleBackColor = false;
             // 
             // FrmConsultasClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(878, 574);
+            this.ClientSize = new System.Drawing.Size(1317, 883);
             this.Controls.Add(this.btnCargar);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.dgvDevolucion);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtBuscar);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "FrmConsultasClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -99,5 +99,11 @@ namespace ProyectoBiblioteca
             FrmConsultasClientes cliente = new FrmConsultasClientes();
             cliente.Show();
         }
+
+        private void préstamosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            /*FrmPrestamosInternos Prestamos = new FrmPrestamosInternos();
+            Prestamos.Show();*/
+        }
     }
 }
