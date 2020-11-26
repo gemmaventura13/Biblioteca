@@ -23,6 +23,11 @@ E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\Proyect
 E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.exe.manifest
 E:\UES 5TO SEMESTRE\PROGRAMACION APLICADA\PROYECTO_BIBLIOTECA\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.application
 C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\bin\Debug\ProyectoBiblioteca.exe.config
+<<<<<<< HEAD
+=======
+C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.exe
+C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.pdb
+>>>>>>> bf97d504d75b7231794ba8184843ad14d9880f04
 C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\bin\Debug\ProyectoBiblioteca.exe.manifest
 C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\bin\Debug\ProyectoBiblioteca.application
 C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\bin\Debug\ProyectoBiblioteca.exe
@@ -44,8 +49,7 @@ C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca
 C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.csproj.GenerateResource.Cache
 C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.exe.manifest
 C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.application
-C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.exe
-C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.pdb
 C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.FrmReportePrestamos.resources
 C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\RdlCompile.cache
 C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\RdlCompile.compiled
+>>>>>>> aad5483930207ce0f78dbd68319828c8b37b33ec

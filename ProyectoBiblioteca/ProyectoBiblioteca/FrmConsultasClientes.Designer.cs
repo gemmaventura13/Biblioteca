@@ -29,21 +29,13 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.dgvDevolucion = new System.Windows.Forms.DataGridView();
-            this.IdCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ApellidoCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaNacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NumeroTelefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Edad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvConsulta = new System.Windows.Forms.DataGridView();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnCargar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDevolucion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSalir
@@ -60,92 +52,32 @@
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // dgvDevolucion
+            // dgvConsulta
             // 
-            this.dgvDevolucion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgvDevolucion.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgvDevolucion.BackgroundColor = System.Drawing.Color.DarkCyan;
-            this.dgvDevolucion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvConsulta.AllowUserToAddRows = false;
+            this.dgvConsulta.AllowUserToDeleteRows = false;
+            this.dgvConsulta.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvConsulta.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvConsulta.BackgroundColor = System.Drawing.Color.DarkCyan;
+            this.dgvConsulta.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDevolucion.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvDevolucion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDevolucion.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IdCliente,
-            this.NombreCliente,
-            this.ApellidoCliente,
-            this.Direccion,
-            this.FechaNacimiento,
-            this.Email,
-            this.NumeroTelefono,
-            this.Edad,
-            this.Sexo});
-            this.dgvDevolucion.EnableHeadersVisualStyles = false;
-            this.dgvDevolucion.Location = new System.Drawing.Point(40, 105);
-            this.dgvDevolucion.Name = "dgvDevolucion";
-            this.dgvDevolucion.RowHeadersVisible = false;
-            this.dgvDevolucion.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDevolucion.Size = new System.Drawing.Size(651, 432);
-            this.dgvDevolucion.TabIndex = 21;
-            // 
-            // IdCliente
-            // 
-            this.IdCliente.HeaderText = "ID CLIENTE";
-            this.IdCliente.Name = "IdCliente";
-            this.IdCliente.Width = 83;
-            // 
-            // NombreCliente
-            // 
-            this.NombreCliente.HeaderText = "NOMBRE";
-            this.NombreCliente.Name = "NombreCliente";
-            this.NombreCliente.Width = 81;
-            // 
-            // ApellidoCliente
-            // 
-            this.ApellidoCliente.HeaderText = "APELLIDO";
-            this.ApellidoCliente.Name = "ApellidoCliente";
-            this.ApellidoCliente.Width = 85;
-            // 
-            // Direccion
-            // 
-            this.Direccion.HeaderText = "DIRECCIÓN";
-            this.Direccion.Name = "Direccion";
-            this.Direccion.Width = 91;
-            // 
-            // FechaNacimiento
-            // 
-            this.FechaNacimiento.HeaderText = "FECHA DE NACIMIENTO";
-            this.FechaNacimiento.Name = "FechaNacimiento";
-            this.FechaNacimiento.Width = 146;
-            // 
-            // Email
-            // 
-            this.Email.HeaderText = "EMAIL";
-            this.Email.Name = "Email";
-            this.Email.Width = 66;
-            // 
-            // NumeroTelefono
-            // 
-            this.NumeroTelefono.HeaderText = "NÚMERO DE TELÉFONO";
-            this.NumeroTelefono.Name = "NumeroTelefono";
-            this.NumeroTelefono.Width = 147;
-            // 
-            // Edad
-            // 
-            this.Edad.HeaderText = "EDAD";
-            this.Edad.Name = "Edad";
-            this.Edad.Width = 62;
-            // 
-            // Sexo
-            // 
-            this.Sexo.HeaderText = "SEXO";
-            this.Sexo.Name = "Sexo";
-            this.Sexo.Width = 60;
+            this.dgvConsulta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvConsulta.EnableHeadersVisualStyles = false;
+            this.dgvConsulta.Location = new System.Drawing.Point(40, 105);
+            this.dgvConsulta.Name = "dgvConsulta";
+            this.dgvConsulta.RowHeadersVisible = false;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvConsulta.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvConsulta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvConsulta.Size = new System.Drawing.Size(651, 432);
+            this.dgvConsulta.TabIndex = 21;
             // 
             // btnBuscar
             // 
@@ -190,7 +122,7 @@
             this.ClientSize = new System.Drawing.Size(878, 574);
             this.Controls.Add(this.btnCargar);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.dgvDevolucion);
+            this.Controls.Add(this.dgvConsulta);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtBuscar);
             this.MaximizeBox = false;
@@ -198,7 +130,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CONSULTAS CLIENTES";
             this.Load += new System.EventHandler(this.FrmConsultasClientes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDevolucion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,18 +139,9 @@
         #endregion
 
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.DataGridView dgvDevolucion;
+        private System.Windows.Forms.DataGridView dgvConsulta;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtBuscar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NombreCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ApellidoCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Direccion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FechaNacimiento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NumeroTelefono;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Edad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Sexo;
         private System.Windows.Forms.Button btnCargar;
     }
 }

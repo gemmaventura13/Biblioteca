@@ -72,6 +72,7 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+<<<<<<< HEAD
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="de\Microsoft.ReportViewer.WinForms.resources.dll" size="84920">
       <assemblyIdentity name="Microsoft.ReportViewer.WinForms.resources" version="11.0.0.0" publicKeyToken="89845DCD8080CC91" language="de" processorArchitecture="msil" />
       <hash>
@@ -205,13 +206,20 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ProyectoBiblioteca.exe" size="4165632">
+=======
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ProyectoBiblioteca.exe" size="4123136">
+>>>>>>> bf97d504d75b7231794ba8184843ad14d9880f04
       <assemblyIdentity name="ProyectoBiblioteca" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+<<<<<<< HEAD
         <dsig:DigestValue>6JV17J7P0R/92T/kGNsn5uk0DuDzRr5OeeS3XKOSyuQ=</dsig:DigestValue>
+=======
+        <dsig:DigestValue>f/+Q+xorDNNFILvtL9hI8+E98E2+OGnl92C0V744zHM=</dsig:DigestValue>
+>>>>>>> bf97d504d75b7231794ba8184843ad14d9880f04
       </hash>
     </dependentAssembly>
   </dependency>
