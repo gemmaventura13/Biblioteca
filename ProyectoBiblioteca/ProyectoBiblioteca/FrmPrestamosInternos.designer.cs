@@ -42,20 +42,24 @@
             this.Fecha = new System.Windows.Forms.Label();
             this.TxtHora = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.groupDevolucion = new System.Windows.Forms.GroupBox();
-            this.Devolucion = new System.Windows.Forms.Label();
-            this.NoDevolucion = new System.Windows.Forms.RadioButton();
-            this.SiDevolucion = new System.Windows.Forms.RadioButton();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.groupDevolucion.SuspendLayout();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.IdCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NumeroPrestamo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreLibro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdLibro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoraPrestamo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaRetiro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // TxtNombreLibro
             // 
             this.TxtNombreLibro.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNombreLibro.Location = new System.Drawing.Point(228, 146);
+            this.TxtNombreLibro.Location = new System.Drawing.Point(55, 222);
             this.TxtNombreLibro.Name = "TxtNombreLibro";
             this.TxtNombreLibro.Size = new System.Drawing.Size(231, 27);
             this.TxtNombreLibro.TabIndex = 45;
@@ -65,7 +69,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(223, 118);
+            this.label2.Location = new System.Drawing.Point(50, 194);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(178, 25);
             this.label2.TabIndex = 44;
@@ -74,9 +78,9 @@
             // TxtNomCli
             // 
             this.TxtNomCli.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNomCli.Location = new System.Drawing.Point(283, 50);
+            this.TxtNomCli.Location = new System.Drawing.Point(319, 50);
             this.TxtNomCli.Name = "TxtNomCli";
-            this.TxtNomCli.Size = new System.Drawing.Size(313, 27);
+            this.TxtNomCli.Size = new System.Drawing.Size(188, 27);
             this.TxtNomCli.TabIndex = 43;
             // 
             // label1
@@ -84,7 +88,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(278, 22);
+            this.label1.Location = new System.Drawing.Point(314, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(193, 25);
             this.label1.TabIndex = 42;
@@ -95,7 +99,7 @@
             this.Labelxd.AutoSize = true;
             this.Labelxd.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Labelxd.ForeColor = System.Drawing.Color.White;
-            this.Labelxd.Location = new System.Drawing.Point(47, 118);
+            this.Labelxd.Location = new System.Drawing.Point(50, 101);
             this.Labelxd.Name = "Labelxd";
             this.Labelxd.Size = new System.Drawing.Size(159, 25);
             this.Labelxd.TabIndex = 31;
@@ -104,7 +108,7 @@
             // FechaSelector
             // 
             this.FechaSelector.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FechaSelector.Location = new System.Drawing.Point(51, 249);
+            this.FechaSelector.Location = new System.Drawing.Point(51, 363);
             this.FechaSelector.Name = "FechaSelector";
             this.FechaSelector.Size = new System.Drawing.Size(200, 27);
             this.FechaSelector.TabIndex = 39;
@@ -124,7 +128,7 @@
             // TxtIdLibro
             // 
             this.TxtIdLibro.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtIdLibro.Location = new System.Drawing.Point(496, 146);
+            this.TxtIdLibro.Location = new System.Drawing.Point(319, 222);
             this.TxtIdLibro.Name = "TxtIdLibro";
             this.TxtIdLibro.Size = new System.Drawing.Size(100, 27);
             this.TxtIdLibro.TabIndex = 38;
@@ -142,7 +146,7 @@
             this.Labelxd2.AutoSize = true;
             this.Labelxd2.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Labelxd2.ForeColor = System.Drawing.Color.White;
-            this.Labelxd2.Location = new System.Drawing.Point(491, 118);
+            this.Labelxd2.Location = new System.Drawing.Point(314, 194);
             this.Labelxd2.Name = "Labelxd2";
             this.Labelxd2.Size = new System.Drawing.Size(93, 25);
             this.Labelxd2.TabIndex = 33;
@@ -151,7 +155,7 @@
             // TxtNumPrestamo
             // 
             this.TxtNumPrestamo.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNumPrestamo.Location = new System.Drawing.Point(51, 146);
+            this.TxtNumPrestamo.Location = new System.Drawing.Point(54, 129);
             this.TxtNumPrestamo.Name = "TxtNumPrestamo";
             this.TxtNumPrestamo.Size = new System.Drawing.Size(99, 27);
             this.TxtNumPrestamo.TabIndex = 36;
@@ -161,7 +165,7 @@
             this.Fecha.AutoSize = true;
             this.Fecha.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Fecha.ForeColor = System.Drawing.Color.White;
-            this.Fecha.Location = new System.Drawing.Point(49, 221);
+            this.Fecha.Location = new System.Drawing.Point(49, 335);
             this.Fecha.Name = "Fecha";
             this.Fecha.Size = new System.Drawing.Size(157, 25);
             this.Fecha.TabIndex = 34;
@@ -170,7 +174,7 @@
             // TxtHora
             // 
             this.TxtHora.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtHora.Location = new System.Drawing.Point(294, 249);
+            this.TxtHora.Location = new System.Drawing.Point(55, 293);
             this.TxtHora.Name = "TxtHora";
             this.TxtHora.Size = new System.Drawing.Size(100, 27);
             this.TxtHora.TabIndex = 58;
@@ -181,60 +185,11 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(289, 221);
+            this.label3.Location = new System.Drawing.Point(50, 265);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(182, 25);
             this.label3.TabIndex = 57;
             this.label3.Text = "Hora del Prestamo";
-            // 
-            // groupDevolucion
-            // 
-            this.groupDevolucion.Controls.Add(this.Devolucion);
-            this.groupDevolucion.Controls.Add(this.NoDevolucion);
-            this.groupDevolucion.Controls.Add(this.SiDevolucion);
-            this.groupDevolucion.Location = new System.Drawing.Point(51, 298);
-            this.groupDevolucion.Name = "groupDevolucion";
-            this.groupDevolucion.Size = new System.Drawing.Size(180, 112);
-            this.groupDevolucion.TabIndex = 85;
-            this.groupDevolucion.TabStop = false;
-            // 
-            // Devolucion
-            // 
-            this.Devolucion.AutoSize = true;
-            this.Devolucion.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Devolucion.ForeColor = System.Drawing.Color.White;
-            this.Devolucion.Location = new System.Drawing.Point(18, 19);
-            this.Devolucion.Name = "Devolucion";
-            this.Devolucion.Size = new System.Drawing.Size(139, 25);
-            this.Devolucion.TabIndex = 60;
-            this.Devolucion.Text = "¿Se devolvió?:";
-            // 
-            // NoDevolucion
-            // 
-            this.NoDevolucion.AutoSize = true;
-            this.NoDevolucion.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NoDevolucion.ForeColor = System.Drawing.Color.White;
-            this.NoDevolucion.Location = new System.Drawing.Point(23, 74);
-            this.NoDevolucion.Name = "NoDevolucion";
-            this.NoDevolucion.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.NoDevolucion.Size = new System.Drawing.Size(51, 25);
-            this.NoDevolucion.TabIndex = 66;
-            this.NoDevolucion.TabStop = true;
-            this.NoDevolucion.Text = "No";
-            this.NoDevolucion.UseVisualStyleBackColor = true;
-            // 
-            // SiDevolucion
-            // 
-            this.SiDevolucion.AutoSize = true;
-            this.SiDevolucion.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SiDevolucion.ForeColor = System.Drawing.Color.White;
-            this.SiDevolucion.Location = new System.Drawing.Point(23, 45);
-            this.SiDevolucion.Name = "SiDevolucion";
-            this.SiDevolucion.Size = new System.Drawing.Size(41, 25);
-            this.SiDevolucion.TabIndex = 65;
-            this.SiDevolucion.TabStop = true;
-            this.SiDevolucion.Text = "Sí";
-            this.SiDevolucion.UseVisualStyleBackColor = true;
             // 
             // btnSalir
             // 
@@ -278,13 +233,64 @@
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IdCliente,
+            this.NombreCliente,
+            this.NumeroPrestamo,
+            this.NombreLibro,
+            this.IdLibro,
+            this.HoraPrestamo,
+            this.FechaRetiro});
+            this.dataGridView1.Location = new System.Drawing.Point(539, 22);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(459, 268);
+            this.dataGridView1.TabIndex = 85;
+            // 
+            // IdCliente
+            // 
+            this.IdCliente.HeaderText = "Id del Cliente";
+            this.IdCliente.Name = "IdCliente";
+            // 
+            // NombreCliente
+            // 
+            this.NombreCliente.HeaderText = "Nombre del Cliente";
+            this.NombreCliente.Name = "NombreCliente";
+            // 
+            // NumeroPrestamo
+            // 
+            this.NumeroPrestamo.HeaderText = "Numero del Prestamo";
+            this.NumeroPrestamo.Name = "NumeroPrestamo";
+            // 
+            // NombreLibro
+            // 
+            this.NombreLibro.HeaderText = "Nombre del Libro";
+            this.NombreLibro.Name = "NombreLibro";
+            // 
+            // IdLibro
+            // 
+            this.IdLibro.HeaderText = "Id del Libro";
+            this.IdLibro.Name = "IdLibro";
+            // 
+            // HoraPrestamo
+            // 
+            this.HoraPrestamo.HeaderText = "Hora del Prestamo";
+            this.HoraPrestamo.Name = "HoraPrestamo";
+            // 
+            // FechaRetiro
+            // 
+            this.FechaRetiro.HeaderText = "Fecha de Retiro";
+            this.FechaRetiro.Name = "FechaRetiro";
+            // 
             // FrmPrestamosInternos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(642, 499);
-            this.Controls.Add(this.groupDevolucion);
+            this.ClientSize = new System.Drawing.Size(1010, 499);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
@@ -308,8 +314,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PRÉSTAMOS INTERNOS";
             this.Load += new System.EventHandler(this.Form2_Load);
-            this.groupDevolucion.ResumeLayout(false);
-            this.groupDevolucion.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -331,12 +336,16 @@
         private System.Windows.Forms.Label Fecha;
         private System.Windows.Forms.TextBox TxtHora;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.GroupBox groupDevolucion;
-        private System.Windows.Forms.Label Devolucion;
-        private System.Windows.Forms.RadioButton NoDevolucion;
-        private System.Windows.Forms.RadioButton SiDevolucion;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdCliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreCliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NumeroPrestamo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreLibro;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdLibro;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HoraPrestamo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FechaRetiro;
     }
 }
