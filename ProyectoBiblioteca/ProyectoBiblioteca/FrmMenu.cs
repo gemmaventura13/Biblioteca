@@ -120,6 +120,12 @@ namespace ProyectoBiblioteca
 
         }
 
+        private void dEVOLUCIONESToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            FrmLibrosDevolucion devolucion = new FrmLibrosDevolucion();
+            devolucion.Show();
+        }
+
        
     }
 }
