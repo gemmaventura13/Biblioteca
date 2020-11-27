@@ -158,7 +158,7 @@ namespace ProyectoBiblioteca
                     cmd.Parameters.Add("@Sexo", MySqlDbType.VarChar).Value = cmbSexo.Text;
                     cmd.Parameters.Add("@Direccion", MySqlDbType.VarChar).Value = txtDireccion.Text;
                     cmd.Parameters.Add("@Email", MySqlDbType.VarChar).Value = txtEmail.Text;
-                    cmd.Parameters.Add("@FechaNac", MySqlDbType.VarChar).Value = txtFechaNacimiento.Text;
+                    cmd.Parameters.Add("@FechaNac", MySqlDbType.VarChar).Value = Convert.ToDateTime(txtFechaNacimiento.Text).ToString("yyyy-MM-dd");
                     cmd.Parameters.Add("@Telefono", MySqlDbType.VarChar).Value = txtTelefono.Text;
                     bandera = 1;
 

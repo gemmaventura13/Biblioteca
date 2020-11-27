@@ -11,11 +11,11 @@ using MySql.Data.MySqlClient;
 
 namespace ProyectoBiblioteca
 {
-    public partial class FrmPrestamosInternos : Form
+    public partial class FrmPrestamos : Form
     {
         public static string connstring = "Server=localhost;User id=root;Database=biblioteca;password=;Convert Zero Datetime=True";
 
-        public FrmPrestamosInternos()
+        public FrmPrestamos()
         {
             InitializeComponent();
         }
@@ -142,8 +142,6 @@ namespace ProyectoBiblioteca
                     cmd.Parameters.Add("@HoraPrestamo", MySqlDbType.VarChar).Value = TxtHora.Text;
 
                     bandera = 1;
-
-
 
                     if (bandera == 1)
                     {

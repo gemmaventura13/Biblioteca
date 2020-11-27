@@ -183,12 +183,14 @@
             this.préstamoInternoToolStripMenuItem1.Name = "préstamoInternoToolStripMenuItem1";
             this.préstamoInternoToolStripMenuItem1.Size = new System.Drawing.Size(302, 36);
             this.préstamoInternoToolStripMenuItem1.Text = "Préstamo";
+            this.préstamoInternoToolStripMenuItem1.Click += new System.EventHandler(this.préstamoInternoToolStripMenuItem1_Click);
             // 
             // reporteDeLecturaToolStripMenuItem
             // 
             this.reporteDeLecturaToolStripMenuItem.Name = "reporteDeLecturaToolStripMenuItem";
             this.reporteDeLecturaToolStripMenuItem.Size = new System.Drawing.Size(302, 36);
             this.reporteDeLecturaToolStripMenuItem.Text = "Reporte de lectura";
+            this.reporteDeLecturaToolStripMenuItem.Click += new System.EventHandler(this.reporteDeLecturaToolStripMenuItem_Click);
             // 
             // acercaDeToolStripMenuItem1
             // 

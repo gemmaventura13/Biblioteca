@@ -29,21 +29,13 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.dgvDevolucion = new System.Windows.Forms.DataGridView();
-            this.IdCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ApellidoCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaNacimiento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NumeroTelefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Edad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sexo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvConsulta = new System.Windows.Forms.DataGridView();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnCargar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDevolucion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSalir
@@ -52,102 +44,40 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(1101, 229);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSalir.Location = new System.Drawing.Point(734, 149);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(156, 58);
+            this.btnSalir.Size = new System.Drawing.Size(104, 38);
             this.btnSalir.TabIndex = 22;
             this.btnSalir.Text = "SALIR";
             this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // dgvDevolucion
+            // dgvConsulta
             // 
-            this.dgvDevolucion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgvDevolucion.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgvDevolucion.BackgroundColor = System.Drawing.Color.DarkCyan;
-            this.dgvDevolucion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvConsulta.AllowUserToAddRows = false;
+            this.dgvConsulta.AllowUserToDeleteRows = false;
+            this.dgvConsulta.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvConsulta.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvConsulta.BackgroundColor = System.Drawing.Color.DarkCyan;
+            this.dgvConsulta.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDevolucion.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvDevolucion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDevolucion.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IdCliente,
-            this.NombreCliente,
-            this.ApellidoCliente,
-            this.Direccion,
-            this.FechaNacimiento,
-            this.Email,
-            this.NumeroTelefono,
-            this.Edad,
-            this.Sexo});
-            this.dgvDevolucion.EnableHeadersVisualStyles = false;
-            this.dgvDevolucion.Location = new System.Drawing.Point(60, 162);
-            this.dgvDevolucion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dgvDevolucion.Name = "dgvDevolucion";
-            this.dgvDevolucion.RowHeadersVisible = false;
-            this.dgvDevolucion.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDevolucion.Size = new System.Drawing.Size(976, 665);
-            this.dgvDevolucion.TabIndex = 21;
-            // 
-            // IdCliente
-            // 
-            this.IdCliente.HeaderText = "ID CLIENTE";
-            this.IdCliente.Name = "IdCliente";
-            this.IdCliente.Width = 115;
-            // 
-            // NombreCliente
-            // 
-            this.NombreCliente.HeaderText = "NOMBRE";
-            this.NombreCliente.Name = "NombreCliente";
-            this.NombreCliente.Width = 109;
-            // 
-            // ApellidoCliente
-            // 
-            this.ApellidoCliente.HeaderText = "APELLIDO";
-            this.ApellidoCliente.Name = "ApellidoCliente";
-            this.ApellidoCliente.Width = 115;
-            // 
-            // Direccion
-            // 
-            this.Direccion.HeaderText = "DIRECCIÓN";
-            this.Direccion.Name = "Direccion";
-            this.Direccion.Width = 127;
-            // 
-            // FechaNacimiento
-            // 
-            this.FechaNacimiento.HeaderText = "FECHA DE NACIMIENTO";
-            this.FechaNacimiento.Name = "FechaNacimiento";
-            this.FechaNacimiento.Width = 211;
-            // 
-            // Email
-            // 
-            this.Email.HeaderText = "EMAIL";
-            this.Email.Name = "Email";
-            this.Email.Width = 86;
-            // 
-            // NumeroTelefono
-            // 
-            this.NumeroTelefono.HeaderText = "NÚMERO DE TELÉFONO";
-            this.NumeroTelefono.Name = "NumeroTelefono";
-            this.NumeroTelefono.Width = 209;
-            // 
-            // Edad
-            // 
-            this.Edad.HeaderText = "EDAD";
-            this.Edad.Name = "Edad";
-            this.Edad.Width = 82;
-            // 
-            // Sexo
-            // 
-            this.Sexo.HeaderText = "SEXO";
-            this.Sexo.Name = "Sexo";
-            this.Sexo.Width = 78;
+            this.dgvConsulta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvConsulta.EnableHeadersVisualStyles = false;
+            this.dgvConsulta.Location = new System.Drawing.Point(40, 105);
+            this.dgvConsulta.Name = "dgvConsulta";
+            this.dgvConsulta.RowHeadersVisible = false;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvConsulta.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvConsulta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvConsulta.Size = new System.Drawing.Size(651, 432);
+            this.dgvConsulta.TabIndex = 21;
             // 
             // btnBuscar
             // 
@@ -155,10 +85,9 @@
             this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscar.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Location = new System.Drawing.Point(880, 57);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnBuscar.Location = new System.Drawing.Point(587, 37);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(156, 58);
+            this.btnBuscar.Size = new System.Drawing.Size(104, 38);
             this.btnBuscar.TabIndex = 20;
             this.btnBuscar.Text = "BUSCAR";
             this.btnBuscar.UseVisualStyleBackColor = false;
@@ -166,10 +95,9 @@
             // txtBuscar
             // 
             this.txtBuscar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscar.Location = new System.Drawing.Point(60, 65);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBuscar.Location = new System.Drawing.Point(40, 42);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(766, 36);
+            this.txtBuscar.Size = new System.Drawing.Size(512, 27);
             this.txtBuscar.TabIndex = 19;
             this.txtBuscar.Text = "ESCRIBE EL ID DEL CLIENTE O EL NOMBRE";
             // 
@@ -179,32 +107,30 @@
             this.btnCargar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCargar.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargar.ForeColor = System.Drawing.Color.White;
-            this.btnCargar.Location = new System.Drawing.Point(1101, 162);
-            this.btnCargar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCargar.Location = new System.Drawing.Point(734, 105);
             this.btnCargar.Name = "btnCargar";
-            this.btnCargar.Size = new System.Drawing.Size(156, 58);
+            this.btnCargar.Size = new System.Drawing.Size(104, 38);
             this.btnCargar.TabIndex = 25;
             this.btnCargar.Text = "RECARGAR";
             this.btnCargar.UseVisualStyleBackColor = false;
             // 
             // FrmConsultasClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1317, 883);
+            this.ClientSize = new System.Drawing.Size(878, 574);
             this.Controls.Add(this.btnCargar);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.dgvDevolucion);
+            this.Controls.Add(this.dgvConsulta);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtBuscar);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "FrmConsultasClientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CONSULTAS CLIENTES";
             this.Load += new System.EventHandler(this.FrmConsultasClientes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvDevolucion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,18 +139,9 @@
         #endregion
 
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.DataGridView dgvDevolucion;
+        private System.Windows.Forms.DataGridView dgvConsulta;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtBuscar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NombreCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ApellidoCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Direccion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FechaNacimiento;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NumeroTelefono;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Edad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Sexo;
         private System.Windows.Forms.Button btnCargar;
     }
 }

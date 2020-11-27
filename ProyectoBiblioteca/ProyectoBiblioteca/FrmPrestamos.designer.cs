@@ -1,6 +1,6 @@
 ﻿namespace ProyectoBiblioteca
 {
-    partial class FrmPrestamosInternos
+    partial class FrmPrestamos
     {
         /// <summary>
         /// Required designer variable.
@@ -45,7 +45,6 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
-<<<<<<< HEAD
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.IdCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,20 +53,15 @@
             this.IdLibro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoraPrestamo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FechaRetiro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-=======
->>>>>>> bf97d504d75b7231794ba8184843ad14d9880f04
             this.SuspendLayout();
             // 
             // TxtNombreLibro
             // 
             this.TxtNombreLibro.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.TxtNombreLibro.Location = new System.Drawing.Point(55, 222);
-=======
-            this.TxtNombreLibro.Location = new System.Drawing.Point(342, 225);
+            this.TxtNombreLibro.Location = new System.Drawing.Point(306, 227);
             this.TxtNombreLibro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
->>>>>>> bf97d504d75b7231794ba8184843ad14d9880f04
             this.TxtNombreLibro.Name = "TxtNombreLibro";
             this.TxtNombreLibro.Size = new System.Drawing.Size(344, 36);
             this.TxtNombreLibro.TabIndex = 45;
@@ -77,12 +71,8 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-<<<<<<< HEAD
-            this.label2.Location = new System.Drawing.Point(50, 194);
-=======
-            this.label2.Location = new System.Drawing.Point(334, 182);
+            this.label2.Location = new System.Drawing.Point(298, 184);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
->>>>>>> bf97d504d75b7231794ba8184843ad14d9880f04
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(270, 40);
             this.label2.TabIndex = 44;
@@ -91,16 +81,10 @@
             // TxtNomCli
             // 
             this.TxtNomCli.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.TxtNomCli.Location = new System.Drawing.Point(319, 50);
-            this.TxtNomCli.Name = "TxtNomCli";
-            this.TxtNomCli.Size = new System.Drawing.Size(188, 27);
-=======
-            this.TxtNomCli.Location = new System.Drawing.Point(424, 77);
+            this.TxtNomCli.Location = new System.Drawing.Point(388, 79);
             this.TxtNomCli.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtNomCli.Name = "TxtNomCli";
             this.TxtNomCli.Size = new System.Drawing.Size(468, 36);
->>>>>>> bf97d504d75b7231794ba8184843ad14d9880f04
             this.TxtNomCli.TabIndex = 43;
             // 
             // label1
@@ -108,12 +92,8 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-<<<<<<< HEAD
-            this.label1.Location = new System.Drawing.Point(314, 22);
-=======
-            this.label1.Location = new System.Drawing.Point(417, 34);
+            this.label1.Location = new System.Drawing.Point(381, 36);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
->>>>>>> bf97d504d75b7231794ba8184843ad14d9880f04
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(296, 40);
             this.label1.TabIndex = 42;
@@ -124,12 +104,8 @@
             this.Labelxd.AutoSize = true;
             this.Labelxd.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Labelxd.ForeColor = System.Drawing.Color.White;
-<<<<<<< HEAD
-            this.Labelxd.Location = new System.Drawing.Point(50, 101);
-=======
-            this.Labelxd.Location = new System.Drawing.Point(70, 182);
+            this.Labelxd.Location = new System.Drawing.Point(34, 184);
             this.Labelxd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
->>>>>>> bf97d504d75b7231794ba8184843ad14d9880f04
             this.Labelxd.Name = "Labelxd";
             this.Labelxd.Size = new System.Drawing.Size(241, 40);
             this.Labelxd.TabIndex = 31;
@@ -138,12 +114,8 @@
             // FechaSelector
             // 
             this.FechaSelector.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.FechaSelector.Location = new System.Drawing.Point(51, 363);
-=======
-            this.FechaSelector.Location = new System.Drawing.Point(76, 383);
+            this.FechaSelector.Location = new System.Drawing.Point(953, 79);
             this.FechaSelector.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
->>>>>>> bf97d504d75b7231794ba8184843ad14d9880f04
             this.FechaSelector.Name = "FechaSelector";
             this.FechaSelector.Size = new System.Drawing.Size(298, 36);
             this.FechaSelector.TabIndex = 39;
@@ -153,7 +125,7 @@
             this.IdUsuario.AutoSize = true;
             this.IdUsuario.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IdUsuario.ForeColor = System.Drawing.Color.White;
-            this.IdUsuario.Location = new System.Drawing.Point(70, 34);
+            this.IdUsuario.Location = new System.Drawing.Point(34, 36);
             this.IdUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.IdUsuario.Name = "IdUsuario";
             this.IdUsuario.Size = new System.Drawing.Size(158, 40);
@@ -164,12 +136,8 @@
             // TxtIdLibro
             // 
             this.TxtIdLibro.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.TxtIdLibro.Location = new System.Drawing.Point(319, 222);
-=======
-            this.TxtIdLibro.Location = new System.Drawing.Point(744, 225);
+            this.TxtIdLibro.Location = new System.Drawing.Point(708, 227);
             this.TxtIdLibro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
->>>>>>> bf97d504d75b7231794ba8184843ad14d9880f04
             this.TxtIdLibro.Name = "TxtIdLibro";
             this.TxtIdLibro.Size = new System.Drawing.Size(148, 36);
             this.TxtIdLibro.TabIndex = 38;
@@ -177,7 +145,7 @@
             // TxtIdCliente
             // 
             this.TxtIdCliente.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtIdCliente.Location = new System.Drawing.Point(78, 77);
+            this.TxtIdCliente.Location = new System.Drawing.Point(42, 79);
             this.TxtIdCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtIdCliente.Name = "TxtIdCliente";
             this.TxtIdCliente.Size = new System.Drawing.Size(268, 36);
@@ -188,12 +156,8 @@
             this.Labelxd2.AutoSize = true;
             this.Labelxd2.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Labelxd2.ForeColor = System.Drawing.Color.White;
-<<<<<<< HEAD
-            this.Labelxd2.Location = new System.Drawing.Point(314, 194);
-=======
-            this.Labelxd2.Location = new System.Drawing.Point(736, 182);
+            this.Labelxd2.Location = new System.Drawing.Point(700, 184);
             this.Labelxd2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
->>>>>>> bf97d504d75b7231794ba8184843ad14d9880f04
             this.Labelxd2.Name = "Labelxd2";
             this.Labelxd2.Size = new System.Drawing.Size(140, 40);
             this.Labelxd2.TabIndex = 33;
@@ -202,12 +166,8 @@
             // TxtNumPrestamo
             // 
             this.TxtNumPrestamo.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.TxtNumPrestamo.Location = new System.Drawing.Point(54, 129);
-=======
-            this.TxtNumPrestamo.Location = new System.Drawing.Point(76, 225);
+            this.TxtNumPrestamo.Location = new System.Drawing.Point(40, 227);
             this.TxtNumPrestamo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
->>>>>>> bf97d504d75b7231794ba8184843ad14d9880f04
             this.TxtNumPrestamo.Name = "TxtNumPrestamo";
             this.TxtNumPrestamo.Size = new System.Drawing.Size(146, 36);
             this.TxtNumPrestamo.TabIndex = 36;
@@ -217,12 +177,8 @@
             this.Fecha.AutoSize = true;
             this.Fecha.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Fecha.ForeColor = System.Drawing.Color.White;
-<<<<<<< HEAD
-            this.Fecha.Location = new System.Drawing.Point(49, 335);
-=======
-            this.Fecha.Location = new System.Drawing.Point(74, 340);
+            this.Fecha.Location = new System.Drawing.Point(951, 36);
             this.Fecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
->>>>>>> bf97d504d75b7231794ba8184843ad14d9880f04
             this.Fecha.Name = "Fecha";
             this.Fecha.Size = new System.Drawing.Size(241, 40);
             this.Fecha.TabIndex = 34;
@@ -231,12 +187,8 @@
             // TxtHora
             // 
             this.TxtHora.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
-            this.TxtHora.Location = new System.Drawing.Point(55, 293);
-=======
-            this.TxtHora.Location = new System.Drawing.Point(441, 383);
+            this.TxtHora.Location = new System.Drawing.Point(953, 227);
             this.TxtHora.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
->>>>>>> bf97d504d75b7231794ba8184843ad14d9880f04
             this.TxtHora.Name = "TxtHora";
             this.TxtHora.Size = new System.Drawing.Size(148, 36);
             this.TxtHora.TabIndex = 58;
@@ -247,12 +199,8 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-<<<<<<< HEAD
-            this.label3.Location = new System.Drawing.Point(50, 265);
-=======
-            this.label3.Location = new System.Drawing.Point(434, 340);
+            this.label3.Location = new System.Drawing.Point(946, 184);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
->>>>>>> bf97d504d75b7231794ba8184843ad14d9880f04
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(276, 40);
             this.label3.TabIndex = 57;
@@ -264,7 +212,7 @@
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.White;
-            this.btnSalir.Location = new System.Drawing.Point(479, 516);
+            this.btnSalir.Location = new System.Drawing.Point(1151, 521);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(190, 58);
@@ -279,7 +227,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(258, 516);
+            this.btnCancelar.Location = new System.Drawing.Point(1151, 440);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(190, 58);
@@ -294,7 +242,7 @@
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Location = new System.Drawing.Point(37, 516);
+            this.btnGuardar.Location = new System.Drawing.Point(1151, 355);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(190, 58);
@@ -305,6 +253,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.Teal;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdCliente,
@@ -314,9 +263,10 @@
             this.IdLibro,
             this.HoraPrestamo,
             this.FechaRetiro});
-            this.dataGridView1.Location = new System.Drawing.Point(539, 22);
+            this.dataGridView1.GridColor = System.Drawing.Color.Teal;
+            this.dataGridView1.Location = new System.Drawing.Point(42, 299);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(459, 268);
+            this.dataGridView1.Size = new System.Drawing.Size(1023, 268);
             this.dataGridView1.TabIndex = 85;
             // 
             // IdCliente
@@ -354,17 +304,28 @@
             this.FechaRetiro.HeaderText = "Fecha de Retiro";
             this.FechaRetiro.Name = "FechaRetiro";
             // 
-            // FrmPrestamosInternos
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkCyan;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(1151, 268);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(190, 58);
+            this.button1.TabIndex = 86;
+            this.button1.Text = "Aceptar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // FrmPrestamos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(1010, 499);
+            this.ClientSize = new System.Drawing.Size(1397, 593);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
-=======
-            this.ClientSize = new System.Drawing.Size(963, 593);
->>>>>>> bf97d504d75b7231794ba8184843ad14d9880f04
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
@@ -385,14 +346,11 @@
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
-            this.Name = "FrmPrestamosInternos";
+            this.Name = "FrmPrestamos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PRÉSTAMOS INTERNOS";
             this.Load += new System.EventHandler(this.Form2_Load);
-<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-=======
->>>>>>> bf97d504d75b7231794ba8184843ad14d9880f04
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -425,5 +383,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn IdLibro;
         private System.Windows.Forms.DataGridViewTextBoxColumn HoraPrestamo;
         private System.Windows.Forms.DataGridViewTextBoxColumn FechaRetiro;
+        private System.Windows.Forms.Button button1;
     }
 }
