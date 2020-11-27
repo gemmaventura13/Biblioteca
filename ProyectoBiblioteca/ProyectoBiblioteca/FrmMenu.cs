@@ -116,5 +116,10 @@ namespace ProyectoBiblioteca
             lectura.Show();
 
         }
+
+        private void préstamoInternoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
