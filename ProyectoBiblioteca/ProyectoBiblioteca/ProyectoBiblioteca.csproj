@@ -61,10 +61,13 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="MySql.Data, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -75,6 +78,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataPrestamos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataPrestamos.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FrmConsultasClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +112,12 @@
     </Compile>
     <Compile Include="FrmPrestamosInternos.designer.cs">
       <DependentUpon>FrmPrestamosInternos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportePrestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportePrestamos.Designer.cs">
+      <DependentUpon>FrmReportePrestamos.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmReportes.cs">
       <SubType>Form</SubType>
@@ -165,6 +179,9 @@
     <EmbeddedResource Include="FrmPrestamosInternos.resx">
       <DependentUpon>FrmPrestamosInternos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportePrestamos.resx">
+      <DependentUpon>FrmReportePrestamos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmReportes.resx">
       <DependentUpon>FrmReportes.cs</DependentUpon>
     </EmbeddedResource>
@@ -190,6 +207,18 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report2.rdlc" />
+    <None Include="DataPrestamos.xsc">
+      <DependentUpon>DataPrestamos.xsd</DependentUpon>
+    </None>
+    <None Include="DataPrestamos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataPrestamos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataPrestamos.xss">
+      <DependentUpon>DataPrestamos.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

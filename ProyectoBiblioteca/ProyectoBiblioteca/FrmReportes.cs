@@ -29,7 +29,8 @@ namespace ProyectoBiblioteca
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("No se ha registrado un prestamo interno aun");
+            FrmReportePrestamos reporte = new FrmReportePrestamos();
+            reporte.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)

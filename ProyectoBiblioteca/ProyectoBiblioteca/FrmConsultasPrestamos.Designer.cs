@@ -31,16 +31,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.dgvPrestamo = new System.Windows.Forms.DataGridView();
-            this.Folio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreLibro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaRetiro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaDevolucion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CondicionesLibro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvConsulta = new System.Windows.Forms.DataGridView();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnCargar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPrestamo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).BeginInit();
             this.SuspendLayout();
             // 
             // txtBuscar
@@ -65,12 +59,12 @@
             this.btnBuscar.Text = "BUSCAR";
             this.btnBuscar.UseVisualStyleBackColor = false;
             // 
-            // dgvPrestamo
+            // dgvConsulta
             // 
-            this.dgvPrestamo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dgvPrestamo.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dgvPrestamo.BackgroundColor = System.Drawing.Color.DarkCyan;
-            this.dgvPrestamo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvConsulta.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvConsulta.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dgvConsulta.BackgroundColor = System.Drawing.Color.DarkCyan;
+            this.dgvConsulta.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -78,58 +72,15 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvPrestamo.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvPrestamo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPrestamo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Folio,
-            this.NombreCliente,
-            this.NombreLibro,
-            this.FechaRetiro,
-            this.FechaDevolucion,
-            this.CondicionesLibro});
-            this.dgvPrestamo.EnableHeadersVisualStyles = false;
-            this.dgvPrestamo.Location = new System.Drawing.Point(40, 105);
-            this.dgvPrestamo.Name = "dgvPrestamo";
-            this.dgvPrestamo.RowHeadersVisible = false;
-            this.dgvPrestamo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPrestamo.Size = new System.Drawing.Size(651, 432);
-            this.dgvPrestamo.TabIndex = 3;
-            // 
-            // Folio
-            // 
-            this.Folio.HeaderText = "FOLIO";
-            this.Folio.Name = "Folio";
-            this.Folio.Width = 63;
-            // 
-            // NombreCliente
-            // 
-            this.NombreCliente.HeaderText = "NOMBRE DEL CLIENTE";
-            this.NombreCliente.Name = "NombreCliente";
-            this.NombreCliente.Width = 96;
-            // 
-            // NombreLibro
-            // 
-            this.NombreLibro.HeaderText = "NOMBRE DEL LIBRO";
-            this.NombreLibro.Name = "NombreLibro";
-            this.NombreLibro.Width = 96;
-            // 
-            // FechaRetiro
-            // 
-            this.FechaRetiro.HeaderText = "FECHA DE RETIRO";
-            this.FechaRetiro.Name = "FechaRetiro";
-            this.FechaRetiro.Width = 114;
-            // 
-            // FechaDevolucion
-            // 
-            this.FechaDevolucion.HeaderText = "FECHA DE DEVOLUCIÓN";
-            this.FechaDevolucion.Name = "FechaDevolucion";
-            this.FechaDevolucion.Width = 143;
-            // 
-            // CondicionesLibro
-            // 
-            this.CondicionesLibro.HeaderText = "CONDICIONES DEL LIBRO";
-            this.CondicionesLibro.Name = "CondicionesLibro";
-            this.CondicionesLibro.Width = 122;
+            this.dgvConsulta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvConsulta.EnableHeadersVisualStyles = false;
+            this.dgvConsulta.Location = new System.Drawing.Point(40, 105);
+            this.dgvConsulta.Name = "dgvConsulta";
+            this.dgvConsulta.RowHeadersVisible = false;
+            this.dgvConsulta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvConsulta.Size = new System.Drawing.Size(651, 432);
+            this.dgvConsulta.TabIndex = 3;
             // 
             // btnSalir
             // 
@@ -167,7 +118,7 @@
             this.ClientSize = new System.Drawing.Size(878, 574);
             this.Controls.Add(this.btnCargar);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.dgvPrestamo);
+            this.Controls.Add(this.dgvConsulta);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.txtBuscar);
             this.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -175,7 +126,8 @@
             this.Name = "FrmConsultasPrestamos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CONSULTAS PRÉSTAMOS";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPrestamo)).EndInit();
+            this.Load += new System.EventHandler(this.FrmConsultasPrestamos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,14 +137,8 @@
 
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.DataGridView dgvPrestamo;
+        private System.Windows.Forms.DataGridView dgvConsulta;
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Folio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NombreCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NombreLibro;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FechaRetiro;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FechaDevolucion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CondicionesLibro;
         private System.Windows.Forms.Button btnCargar;
     }
 }

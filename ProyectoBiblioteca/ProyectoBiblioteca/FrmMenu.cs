@@ -105,5 +105,10 @@ namespace ProyectoBiblioteca
             /*FrmPrestamosInternos Prestamos = new FrmPrestamosInternos();
             Prestamos.Show();*/
         }
+
+        private void préstamoInternoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

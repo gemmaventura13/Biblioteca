@@ -45,11 +45,21 @@
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.IdCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NumeroPrestamo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreLibro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdLibro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoraPrestamo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaRetiro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // TxtNombreLibro
             // 
             this.TxtNombreLibro.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNombreLibro.Location = new System.Drawing.Point(55, 222);
             this.TxtNombreLibro.Location = new System.Drawing.Point(342, 225);
             this.TxtNombreLibro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtNombreLibro.Name = "TxtNombreLibro";
@@ -61,6 +71,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(50, 194);
             this.label2.Location = new System.Drawing.Point(334, 182);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
@@ -71,6 +82,9 @@
             // TxtNomCli
             // 
             this.TxtNomCli.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNomCli.Location = new System.Drawing.Point(319, 50);
+            this.TxtNomCli.Name = "TxtNomCli";
+            this.TxtNomCli.Size = new System.Drawing.Size(188, 27);
             this.TxtNomCli.Location = new System.Drawing.Point(424, 77);
             this.TxtNomCli.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtNomCli.Name = "TxtNomCli";
@@ -82,6 +96,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(314, 22);
             this.label1.Location = new System.Drawing.Point(417, 34);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -94,6 +109,7 @@
             this.Labelxd.AutoSize = true;
             this.Labelxd.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Labelxd.ForeColor = System.Drawing.Color.White;
+            this.Labelxd.Location = new System.Drawing.Point(50, 101);
             this.Labelxd.Location = new System.Drawing.Point(70, 182);
             this.Labelxd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Labelxd.Name = "Labelxd";
@@ -104,6 +120,7 @@
             // FechaSelector
             // 
             this.FechaSelector.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FechaSelector.Location = new System.Drawing.Point(51, 363);
             this.FechaSelector.Location = new System.Drawing.Point(76, 383);
             this.FechaSelector.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.FechaSelector.Name = "FechaSelector";
@@ -126,6 +143,7 @@
             // TxtIdLibro
             // 
             this.TxtIdLibro.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtIdLibro.Location = new System.Drawing.Point(319, 222);
             this.TxtIdLibro.Location = new System.Drawing.Point(744, 225);
             this.TxtIdLibro.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtIdLibro.Name = "TxtIdLibro";
@@ -146,6 +164,7 @@
             this.Labelxd2.AutoSize = true;
             this.Labelxd2.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Labelxd2.ForeColor = System.Drawing.Color.White;
+            this.Labelxd2.Location = new System.Drawing.Point(314, 194);
             this.Labelxd2.Location = new System.Drawing.Point(736, 182);
             this.Labelxd2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Labelxd2.Name = "Labelxd2";
@@ -156,6 +175,7 @@
             // TxtNumPrestamo
             // 
             this.TxtNumPrestamo.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNumPrestamo.Location = new System.Drawing.Point(54, 129);
             this.TxtNumPrestamo.Location = new System.Drawing.Point(76, 225);
             this.TxtNumPrestamo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtNumPrestamo.Name = "TxtNumPrestamo";
@@ -167,6 +187,7 @@
             this.Fecha.AutoSize = true;
             this.Fecha.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Fecha.ForeColor = System.Drawing.Color.White;
+            this.Fecha.Location = new System.Drawing.Point(49, 335);
             this.Fecha.Location = new System.Drawing.Point(74, 340);
             this.Fecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Fecha.Name = "Fecha";
@@ -177,6 +198,7 @@
             // TxtHora
             // 
             this.TxtHora.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtHora.Location = new System.Drawing.Point(55, 293);
             this.TxtHora.Location = new System.Drawing.Point(441, 383);
             this.TxtHora.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TxtHora.Name = "TxtHora";
@@ -189,6 +211,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(50, 265);
             this.label3.Location = new System.Drawing.Point(434, 340);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
@@ -241,11 +264,64 @@
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IdCliente,
+            this.NombreCliente,
+            this.NumeroPrestamo,
+            this.NombreLibro,
+            this.IdLibro,
+            this.HoraPrestamo,
+            this.FechaRetiro});
+            this.dataGridView1.Location = new System.Drawing.Point(539, 22);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(459, 268);
+            this.dataGridView1.TabIndex = 85;
+            // 
+            // IdCliente
+            // 
+            this.IdCliente.HeaderText = "Id del Cliente";
+            this.IdCliente.Name = "IdCliente";
+            // 
+            // NombreCliente
+            // 
+            this.NombreCliente.HeaderText = "Nombre del Cliente";
+            this.NombreCliente.Name = "NombreCliente";
+            // 
+            // NumeroPrestamo
+            // 
+            this.NumeroPrestamo.HeaderText = "Numero del Prestamo";
+            this.NumeroPrestamo.Name = "NumeroPrestamo";
+            // 
+            // NombreLibro
+            // 
+            this.NombreLibro.HeaderText = "Nombre del Libro";
+            this.NombreLibro.Name = "NombreLibro";
+            // 
+            // IdLibro
+            // 
+            this.IdLibro.HeaderText = "Id del Libro";
+            this.IdLibro.Name = "IdLibro";
+            // 
+            // HoraPrestamo
+            // 
+            this.HoraPrestamo.HeaderText = "Hora del Prestamo";
+            this.HoraPrestamo.Name = "HoraPrestamo";
+            // 
+            // FechaRetiro
+            // 
+            this.FechaRetiro.HeaderText = "Fecha de Retiro";
+            this.FechaRetiro.Name = "FechaRetiro";
+            // 
             // FrmPrestamosInternos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(1010, 499);
+            this.Controls.Add(this.dataGridView1);
             this.ClientSize = new System.Drawing.Size(963, 593);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnCancelar);
@@ -271,6 +347,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PRÉSTAMOS INTERNOS";
             this.Load += new System.EventHandler(this.Form2_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -295,5 +372,13 @@
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdCliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreCliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NumeroPrestamo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreLibro;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdLibro;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HoraPrestamo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FechaRetiro;
     }
 }
