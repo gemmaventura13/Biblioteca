@@ -192,22 +192,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-<<<<<<< HEAD
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ProyectoBiblioteca.exe" size="4169728">
-=======
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ProyectoBiblioteca.exe" size="4168192">
->>>>>>> 78cc28f893f6ccd87d9688b60fdc5427e4e81e5c
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ProyectoBiblioteca.exe" size="4171264">
       <assemblyIdentity name="ProyectoBiblioteca" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-<<<<<<< HEAD
-        <dsig:DigestValue>tHUk93Rbk9terBl/lPLQ4of8eQn97SHD2RvhK/jfHnk=</dsig:DigestValue>
-=======
-        <dsig:DigestValue>2+iCOXkpeuthtytlQbx6QDw8jmCZ32Wo7jshLXsHJJ4=</dsig:DigestValue>
->>>>>>> 78cc28f893f6ccd87d9688b60fdc5427e4e81e5c
+        <dsig:DigestValue>KIH5FU47L+CJ1neP0iXggEOIkG8kcaZddisQYgtrYwI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

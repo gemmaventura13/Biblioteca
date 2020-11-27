@@ -117,9 +117,6 @@ namespace ProyectoBiblioteca
 
         }
 
-        private void préstamoInternoToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
