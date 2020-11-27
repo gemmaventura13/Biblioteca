@@ -24,3 +24,4 @@ C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca
 C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.application
 C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.exe
 C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.pdb
+C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.csprojResolveAssemblyReference.cache
