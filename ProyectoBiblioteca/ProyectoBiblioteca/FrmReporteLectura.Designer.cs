@@ -1,6 +1,6 @@
 ﻿namespace ProyectoBiblioteca
 {
-    partial class FrmFormularioLectura
+    partial class FrmReporteLectura
     {
         /// <summary>
         /// Required designer variable.
@@ -39,16 +39,16 @@
             this.reportViewer1.Size = new System.Drawing.Size(1165, 671);
             this.reportViewer1.TabIndex = 0;
             // 
-            // FrmFormularioLectura
+            // FrmReporteLectura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1189, 695);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "FrmFormularioLectura";
+            this.Name = "FrmReporteLectura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Formulario Lectura";
+            this.Text = "REPORTE DE LECTURA";
             this.Load += new System.EventHandler(this.FrmFormularioLectura_Load);
             this.ResumeLayout(false);
 

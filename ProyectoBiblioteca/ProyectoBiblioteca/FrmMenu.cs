@@ -112,7 +112,7 @@ namespace ProyectoBiblioteca
 
         private void reporteDeLecturaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmFormularioLectura lectura = new FrmFormularioLectura();
+            FrmReporteLectura lectura = new FrmReporteLectura();
             lectura.Show();
 
         }

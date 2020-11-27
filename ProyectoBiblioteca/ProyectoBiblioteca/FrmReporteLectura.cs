@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoBiblioteca
 {
-    public partial class FrmFormularioLectura : Form
+    public partial class FrmReporteLectura : Form
     {
-        public FrmFormularioLectura()
+        public FrmReporteLectura()
         {
             InitializeComponent();
         }

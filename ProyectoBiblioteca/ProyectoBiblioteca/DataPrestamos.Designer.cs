@@ -279,19 +279,13 @@ namespace ProyectoBiblioteca {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class DataTable1DataTable : global::System.Data.TypedTableBase<DataTable1Row> {
             
+            private global::System.Data.DataColumn columnIdPrestamo;
+            
+            private global::System.Data.DataColumn columnFecha;
+            
+            private global::System.Data.DataColumn columnCantidadLibro;
+            
             private global::System.Data.DataColumn columnIdCliente;
-            
-            private global::System.Data.DataColumn columnNombreCli;
-            
-            private global::System.Data.DataColumn columnNumPrestamo;
-            
-            private global::System.Data.DataColumn columnNombreLibro;
-            
-            private global::System.Data.DataColumn columnIdLibro;
-            
-            private global::System.Data.DataColumn columnFechaRetiro;
-            
-            private global::System.Data.DataColumn columnHoraPrestamo;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -328,57 +322,33 @@ namespace ProyectoBiblioteca {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn IdPrestamoColumn {
+                get {
+                    return this.columnIdPrestamo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn FechaColumn {
+                get {
+                    return this.columnFecha;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CantidadLibroColumn {
+                get {
+                    return this.columnCantidadLibro;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public global::System.Data.DataColumn IdClienteColumn {
                 get {
                     return this.columnIdCliente;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn NombreCliColumn {
-                get {
-                    return this.columnNombreCli;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn NumPrestamoColumn {
-                get {
-                    return this.columnNumPrestamo;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn NombreLibroColumn {
-                get {
-                    return this.columnNombreLibro;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn IdLibroColumn {
-                get {
-                    return this.columnIdLibro;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn FechaRetiroColumn {
-                get {
-                    return this.columnFechaRetiro;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn HoraPrestamoColumn {
-                get {
-                    return this.columnHoraPrestamo;
                 }
             }
             
@@ -419,16 +389,13 @@ namespace ProyectoBiblioteca {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DataTable1Row AddDataTable1Row(string IdCliente, string NombreCli, string NumPrestamo, string NombreLibro, string IdLibro, string FechaRetiro, string HoraPrestamo) {
+            public DataTable1Row AddDataTable1Row(string IdPrestamo, string Fecha, string CantidadLibro, string IdCliente) {
                 DataTable1Row rowDataTable1Row = ((DataTable1Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        IdCliente,
-                        NombreCli,
-                        NumPrestamo,
-                        NombreLibro,
-                        IdLibro,
-                        FechaRetiro,
-                        HoraPrestamo};
+                        IdPrestamo,
+                        Fecha,
+                        CantidadLibro,
+                        IdCliente};
                 rowDataTable1Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDataTable1Row);
                 return rowDataTable1Row;
@@ -451,32 +418,23 @@ namespace ProyectoBiblioteca {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
+                this.columnIdPrestamo = base.Columns["IdPrestamo"];
+                this.columnFecha = base.Columns["Fecha"];
+                this.columnCantidadLibro = base.Columns["CantidadLibro"];
                 this.columnIdCliente = base.Columns["IdCliente"];
-                this.columnNombreCli = base.Columns["NombreCli"];
-                this.columnNumPrestamo = base.Columns["NumPrestamo"];
-                this.columnNombreLibro = base.Columns["NombreLibro"];
-                this.columnIdLibro = base.Columns["IdLibro"];
-                this.columnFechaRetiro = base.Columns["FechaRetiro"];
-                this.columnHoraPrestamo = base.Columns["HoraPrestamo"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
+                this.columnIdPrestamo = new global::System.Data.DataColumn("IdPrestamo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIdPrestamo);
+                this.columnFecha = new global::System.Data.DataColumn("Fecha", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFecha);
+                this.columnCantidadLibro = new global::System.Data.DataColumn("CantidadLibro", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCantidadLibro);
                 this.columnIdCliente = new global::System.Data.DataColumn("IdCliente", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnIdCliente);
-                this.columnNombreCli = new global::System.Data.DataColumn("NombreCli", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNombreCli);
-                this.columnNumPrestamo = new global::System.Data.DataColumn("NumPrestamo", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNumPrestamo);
-                this.columnNombreLibro = new global::System.Data.DataColumn("NombreLibro", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNombreLibro);
-                this.columnIdLibro = new global::System.Data.DataColumn("IdLibro", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnIdLibro);
-                this.columnFechaRetiro = new global::System.Data.DataColumn("FechaRetiro", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFechaRetiro);
-                this.columnHoraPrestamo = new global::System.Data.DataColumn("HoraPrestamo", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnHoraPrestamo);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -619,6 +577,54 @@ namespace ProyectoBiblioteca {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string IdPrestamo {
+                get {
+                    try {
+                        return ((string)(this[this.tableDataTable1.IdPrestamoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'IdPrestamo\' de la tabla \'DataTable1\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.IdPrestamoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Fecha {
+                get {
+                    try {
+                        return ((string)(this[this.tableDataTable1.FechaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Fecha\' de la tabla \'DataTable1\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.FechaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string CantidadLibro {
+                get {
+                    try {
+                        return ((string)(this[this.tableDataTable1.CantidadLibroColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CantidadLibro\' de la tabla \'DataTable1\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDataTable1.CantidadLibroColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string IdCliente {
                 get {
                     try {
@@ -635,98 +641,38 @@ namespace ProyectoBiblioteca {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string NombreCli {
-                get {
-                    try {
-                        return ((string)(this[this.tableDataTable1.NombreCliColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'NombreCli\' de la tabla \'DataTable1\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDataTable1.NombreCliColumn] = value;
-                }
+            public bool IsIdPrestamoNull() {
+                return this.IsNull(this.tableDataTable1.IdPrestamoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string NumPrestamo {
-                get {
-                    try {
-                        return ((string)(this[this.tableDataTable1.NumPrestamoColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'NumPrestamo\' de la tabla \'DataTable1\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDataTable1.NumPrestamoColumn] = value;
-                }
+            public void SetIdPrestamoNull() {
+                this[this.tableDataTable1.IdPrestamoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string NombreLibro {
-                get {
-                    try {
-                        return ((string)(this[this.tableDataTable1.NombreLibroColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'NombreLibro\' de la tabla \'DataTable1\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDataTable1.NombreLibroColumn] = value;
-                }
+            public bool IsFechaNull() {
+                return this.IsNull(this.tableDataTable1.FechaColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string IdLibro {
-                get {
-                    try {
-                        return ((string)(this[this.tableDataTable1.IdLibroColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'IdLibro\' de la tabla \'DataTable1\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDataTable1.IdLibroColumn] = value;
-                }
+            public void SetFechaNull() {
+                this[this.tableDataTable1.FechaColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string FechaRetiro {
-                get {
-                    try {
-                        return ((string)(this[this.tableDataTable1.FechaRetiroColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'FechaRetiro\' de la tabla \'DataTable1\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDataTable1.FechaRetiroColumn] = value;
-                }
+            public bool IsCantidadLibroNull() {
+                return this.IsNull(this.tableDataTable1.CantidadLibroColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string HoraPrestamo {
-                get {
-                    try {
-                        return ((string)(this[this.tableDataTable1.HoraPrestamoColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'HoraPrestamo\' de la tabla \'DataTable1\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDataTable1.HoraPrestamoColumn] = value;
-                }
+            public void SetCantidadLibroNull() {
+                this[this.tableDataTable1.CantidadLibroColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -739,78 +685,6 @@ namespace ProyectoBiblioteca {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetIdClienteNull() {
                 this[this.tableDataTable1.IdClienteColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsNombreCliNull() {
-                return this.IsNull(this.tableDataTable1.NombreCliColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetNombreCliNull() {
-                this[this.tableDataTable1.NombreCliColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsNumPrestamoNull() {
-                return this.IsNull(this.tableDataTable1.NumPrestamoColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetNumPrestamoNull() {
-                this[this.tableDataTable1.NumPrestamoColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsNombreLibroNull() {
-                return this.IsNull(this.tableDataTable1.NombreLibroColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetNombreLibroNull() {
-                this[this.tableDataTable1.NombreLibroColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsIdLibroNull() {
-                return this.IsNull(this.tableDataTable1.IdLibroColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetIdLibroNull() {
-                this[this.tableDataTable1.IdLibroColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsFechaRetiroNull() {
-                return this.IsNull(this.tableDataTable1.FechaRetiroColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetFechaRetiroNull() {
-                this[this.tableDataTable1.FechaRetiroColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsHoraPrestamoNull() {
-                return this.IsNull(this.tableDataTable1.HoraPrestamoColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetHoraPrestamoNull() {
-                this[this.tableDataTable1.HoraPrestamoColumn] = global::System.Convert.DBNull;
             }
         }
         
