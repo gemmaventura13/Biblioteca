@@ -78,6 +78,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataPrestamos.cs">
+      <DependentUpon>DataPrestamos.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DataPrestamos.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -107,23 +111,23 @@
     <Compile Include="FrmAcercaDe.designer.cs">
       <DependentUpon>FrmAcercaDe.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPrestamosInternos.cs">
+    <Compile Include="FrmReporteLectura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPrestamosInternos.designer.cs">
-      <DependentUpon>FrmPrestamosInternos.cs</DependentUpon>
+    <Compile Include="FrmReporteLectura.Designer.cs">
+      <DependentUpon>FrmReporteLectura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrestamos.designer.cs">
+      <DependentUpon>FrmPrestamos.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmReportePrestamos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmReportePrestamos.Designer.cs">
       <DependentUpon>FrmReportePrestamos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmReportes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmReportes.designer.cs">
-      <DependentUpon>FrmReportes.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmConsultasDevoluciones.cs">
       <SubType>Form</SubType>
@@ -142,12 +146,6 @@
     </Compile>
     <Compile Include="FrmMenu.designer.cs">
       <DependentUpon>FrmMenu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmPrestamosExternos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmPrestamosExternos.designer.cs">
-      <DependentUpon>FrmPrestamosExternos.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmRegistroLibro.cs">
       <SubType>Form</SubType>
@@ -176,14 +174,14 @@
     <EmbeddedResource Include="FrmAcercaDe.resx">
       <DependentUpon>FrmAcercaDe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPrestamosInternos.resx">
-      <DependentUpon>FrmPrestamosInternos.cs</DependentUpon>
+    <EmbeddedResource Include="FrmReporteLectura.resx">
+      <DependentUpon>FrmReporteLectura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrestamos.resx">
+      <DependentUpon>FrmPrestamos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmReportePrestamos.resx">
       <DependentUpon>FrmReportePrestamos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmReportes.resx">
-      <DependentUpon>FrmReportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmConsultasDevoluciones.resx">
       <DependentUpon>FrmConsultasDevoluciones.cs</DependentUpon>
@@ -193,9 +191,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenu.resx">
       <DependentUpon>FrmMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmPrestamosExternos.resx">
-      <DependentUpon>FrmPrestamosExternos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistroCliente.resx">
       <DependentUpon>FrmRegistroCliente.cs</DependentUpon>
@@ -208,6 +203,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="ReporteLectura.rdlc" />
     <None Include="DataPrestamos.xsc">
       <DependentUpon>DataPrestamos.xsd</DependentUpon>
     </None>

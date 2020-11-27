@@ -25,8 +25,7 @@ namespace ProyectoBiblioteca
 
         private void prestamosInternosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmPrestamosExternos prestamosli = new FrmPrestamosExternos();
-            prestamosli.Show();
+            
         }
 
         private void librosToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -48,8 +47,7 @@ namespace ProyectoBiblioteca
 
         private void préstamoExternoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmPrestamosExternos prestamos = new FrmPrestamosExternos();
-            prestamos.Show();
+            
         }
 
         private void préstamosToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -66,14 +64,14 @@ namespace ProyectoBiblioteca
 
         private void préstamoInternoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmPrestamosInternos prestamos = new FrmPrestamosInternos();
+            FrmPrestamos prestamos = new FrmPrestamos();
             prestamos.Show();
         }
 
         private void reportesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmReportes reportes = new FrmReportes();
-            reportes.Show();
+            /*FrmReportes reportes = new FrmReportes();
+            reportes.Show();*/
         }
 
         private void acercaDeToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -102,13 +100,23 @@ namespace ProyectoBiblioteca
 
         private void préstamosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            /*FrmPrestamosInternos Prestamos = new FrmPrestamosInternos();
-            Prestamos.Show();*/
+            FrmPrestamos Prestamos = new FrmPrestamos();
+            Prestamos.Show();
         }
 
         private void préstamoInternoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            FrmReportePrestamos reporte = new FrmReportePrestamos();
+            reporte.Show();
+        }
+
+        private void reporteDeLecturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmReporteLectura lectura = new FrmReporteLectura();
+            lectura.Show();
 
         }
+
+       
     }
 }

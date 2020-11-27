@@ -191,6 +191,7 @@
             this.reporteDeLecturaToolStripMenuItem.Name = "reporteDeLecturaToolStripMenuItem";
             this.reporteDeLecturaToolStripMenuItem.Size = new System.Drawing.Size(223, 26);
             this.reporteDeLecturaToolStripMenuItem.Text = "Reporte de lectura";
+            this.reporteDeLecturaToolStripMenuItem.Click += new System.EventHandler(this.reporteDeLecturaToolStripMenuItem_Click);
             // 
             // acercaDeToolStripMenuItem1
             // 
