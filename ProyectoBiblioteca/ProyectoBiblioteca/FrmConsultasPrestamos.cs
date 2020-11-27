@@ -31,7 +31,7 @@ namespace ProyectoBiblioteca
         {
             string peticion; //Variable para peticion SQL
 
-            peticion = "SELECT IdPrestamo as 'FOLIO', Fecha as 'FECHA', CAntidadLibro as 'LIBROS PRÉSTADOS', IdCliente as 'CLIENTE' FROM prestamos ORDER BY IdPrestamo";
+            peticion = "SELECT NombreCliente as 'NOMBRE DEL CLIENTE', TituloLibro as 'TÍTULO DEL LIBRO', FechaPrestamo as 'FECHA' FROM historialprestamos ORDER BY FechaPrestamo";
 
             try
             {
@@ -61,8 +61,9 @@ namespace ProyectoBiblioteca
             if (string.IsNullOrEmpty(txtBuscar.Text.Trim()) == false)
             {
                 string peticion;
+                string fecha = Convert.ToDateTime(txtFecha.Text).ToString("yyyy/MM/dd");
 
-                peticion = "SELECT IdPrestamo as 'FOLIO', Fecha as 'FECHA', CAntidadLibro as 'LIBROS PRÉSTADOS', IdCliente as 'CLIENTE' FROM prestamos WHERE IdCliente LIKE ('%" + Convert.ToString(txtBuscar.Text.Trim()) + "%') OR IdPrestamo LIKE ('%" + txtBuscar.Text.Trim() + "%') ";
+                peticion = "SELECT NombreCliente as 'NOMBRE DEL CLIENTE', TituloLibro as 'TÍTULO DEL LIBRO', FechaPrestamo as 'FECHA' FROM historialprestamos WHERE NombreCliente LIKE ('%" + Convert.ToString(txtBuscar.Text.Trim()) + "%') OR TituloLibro LIKE ('%" + txtBuscar.Text.Trim() + "%') OR FechaPrestamo = '" + fecha + "' ; ";
 
                 try
                 {

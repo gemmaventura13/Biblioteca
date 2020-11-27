@@ -357,6 +357,53 @@ namespace ProyectoBiblioteca
             return false;
         }
 
+        public void guardarHistorial()
+        {
+            //Proceso de Guardar
+            int filas = dgvPrestamo.RowCount - 1;
+            for (int i = 0; i <= filas; i++)
+            {
+                //inicia Guardar
+
+                MySql.Data.MySqlClient.MySqlConnection conn = new MySql.Data.MySqlClient.MySqlConnection(connstring);
+                conn.Open();
+                using (MySqlCommand cmd = new MySqlCommand(
+                "INSERT INTO historialprestamos(FolioPrestamo, IdLibro, TituloLibro, IdCLiente, NombreCliente, FechaPrestamo) " +
+                "VALUES (@Folio,@IdLibro,@Titulo,@IdCliente,@Nombre,@Fecha)", conn))
+                {
+                    //var avisos = Convert.ToInt32(TxtAvisos.Text);
+                    cmd.Parameters.Add("@Folio", MySqlDbType.VarChar).Value = txtFolio.Text;
+                    cmd.Parameters.Add("@Fecha", MySqlDbType.Date).Value = DateTime.Now.ToString("yyyy-MM-dd");
+                    cmd.Parameters.Add("@IdLibro", MySqlDbType.VarChar).Value = dgvPrestamo[1, i].Value.ToString();
+                    cmd.Parameters.Add("@Titulo", MySqlDbType.VarChar).Value = dgvPrestamo[2, i].Value.ToString();
+                    cmd.Parameters.Add("@IdCliente", MySqlDbType.Int64).Value = Convert.ToInt64(dgvPrestamo[3, i].Value.ToString());
+                    cmd.Parameters.Add("@Nombre", MySqlDbType.VarChar).Value = dgvPrestamo[4, i].Value.ToString();
+
+                    try
+                    {
+                        if (cmd.ExecuteNonQuery() > 0)
+                        {
+                            // MessageBox.Show("Dado de Alta el Movimiento");
+                        }
+                    }
+                    catch (MySqlException sqlEx)
+                    {
+                        if (sqlEx.Number == 1062)
+                        {
+                            MessageBox.Show(sqlEx.Message, "Error",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Error: " + sqlEx.Message, "Error",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+                //Termina Guardar
+            }
+        }
+
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             int filas = dgvPrestamo.RowCount;
@@ -372,6 +419,7 @@ namespace ProyectoBiblioteca
                 }
                 else
                 {
+                    guardarHistorial();
                     guardarMovPrestamos();
                     guardarPrestamo();
                     limpiarCampos();
