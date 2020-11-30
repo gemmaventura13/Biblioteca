@@ -33,7 +33,7 @@ namespace ProyectoBiblioteca
             {
                 string peticion;
 
-                peticion = "SELECT IdLibro as 'CLAVE', Titulo as 'TITULO', Autor as 'AUTOR', Editorial as 'EDITORIAL', AñoPub as 'AÑO DE PUBLICACIÓN', Edicion as 'EDICIÓN', Genero as 'GÉNERO', NumPag as 'PÁGINAS', PrecioLibro as 'PRECIO' FROM libros WHERE Titulo LIKE ('%" + Convert.ToString(txtBuscar.Text.Trim()) + "%') OR IdLibro LIKE ('%" + txtBuscar.Text.Trim() + "%') "; 
+                peticion = "SELECT IdLibro as 'CLAVE', Titulo as 'TITULO', Autor as 'AUTOR', Editorial as 'EDITORIAL', AñoPub as 'AÑO DE PUBLICACIÓN', Edicion as 'EDICIÓN', Genero as 'GÉNERO', NumPag as 'PÁGINAS', PrecioLibro as 'PRECIO', Disponibilidad as 'DISPONIBLIDAD' FROM libros WHERE Titulo LIKE ('%" + Convert.ToString(txtBuscar.Text.Trim()) + "%') OR IdLibro LIKE ('%" + txtBuscar.Text.Trim() + "%') "; 
 
                 try
                 {
@@ -63,7 +63,7 @@ namespace ProyectoBiblioteca
         {
             string peticion; //Variable para peticion SQL
 
-            peticion = "SELECT IdLibro as 'CLAVE', Titulo as 'TITULO', Autor as 'AUTOR', Editorial as 'EDITORIAL', AñoPub as 'AÑO DE PUBLICACIÓN', Edicion as 'EDICIÓN', Genero as 'GÉNERO', NumPag as 'PÁGINAS', PrecioLibro as 'PRECIO' FROM libros ORDER BY IdLibro";
+            peticion = "SELECT IdLibro as 'CLAVE', Titulo as 'TITULO', Autor as 'AUTOR', Editorial as 'EDITORIAL', AñoPub as 'AÑO DE PUBLICACIÓN', Edicion as 'EDICIÓN', Genero as 'GÉNERO', NumPag as 'PÁGINAS', PrecioLibro as 'PRECIO', Disponibilidad as 'DISPONIBLIDAD' FROM libros ORDER BY IdLibro";
 
             try
             {

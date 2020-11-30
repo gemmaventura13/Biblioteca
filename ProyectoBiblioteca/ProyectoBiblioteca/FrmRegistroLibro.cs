@@ -240,8 +240,8 @@ namespace ProyectoBiblioteca
                 MySql.Data.MySqlClient.MySqlConnection conn = new MySql.Data.MySqlClient.MySqlConnection(connstring);
                 conn.Open();
                 using (MySqlCommand cmd = new MySqlCommand(
-                "INSERT INTO libros(IdLibro, Titulo, Autor, Editorial, AñoPub, PaisPub, Edicion, Genero, NumPag, PrecioLibro) " +
-                "VALUES (@Id, @Titulo, @Autor, @Editorial, @Año, @Pais, @Edicion, @Genero, @Pag, @Precio)", conn))
+                "INSERT INTO libros(IdLibro, Titulo, Autor, Editorial, AñoPub, PaisPub, Edicion, Genero, NumPag, PrecioLibro, Disponibilidad) " +
+                "VALUES (@Id, @Titulo, @Autor, @Editorial, @Año, @Pais, @Edicion, @Genero, @Pag, @Precio, @Disponibilidad)", conn))
                 {
                     //var avisos = Convert.ToInt32(TxtAvisos.Text);
                     cmd.Parameters.Add("@Id", MySqlDbType.VarChar).Value = txtClaveLibro.Text.Trim();
@@ -289,6 +289,7 @@ namespace ProyectoBiblioteca
                     }
 
                     cmd.Parameters.Add("@Precio", MySqlDbType.Double).Value = Convert.ToDouble(txtPrecio.Text.Trim());
+                    cmd.Parameters.Add("@Disponibilidad", MySqlDbType.Int16).Value = 1;
 
                     try
                     {

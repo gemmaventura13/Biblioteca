@@ -8,7 +8,6 @@ C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca
 C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.FrmDevoluciones.resources
 C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.FrmAcercaDe.resources
 C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.FrmReporteLectura.resources
-C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.FrmPrestamos.resources
 C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.FrmReportePrestamos.resources
 C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.FrmConsultasDevoluciones.resources
 C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.FrmConsultasPrestamos.resources
@@ -23,3 +22,5 @@ C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca
 C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.application
 C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.exe
 C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.pdb
+C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.csprojResolveAssemblyReference.cache
+C:\Biblioteca\ProyectoBiblioteca\ProyectoBiblioteca\obj\Debug\ProyectoBiblioteca.frmPrestamosLibros.resources

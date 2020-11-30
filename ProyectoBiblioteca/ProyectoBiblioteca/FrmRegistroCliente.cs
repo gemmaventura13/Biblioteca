@@ -137,7 +137,14 @@ namespace ProyectoBiblioteca
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            string mensaje = "¿Quieres cerrar esta ventana?";
+            string tituloboton = "CERRAR VENTANA";
+            MessageBoxButtons botones = MessageBoxButtons.YesNo;
+            DialogResult result = MessageBox.Show(mensaje, tituloboton, botones, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            } 
         }
 
         public bool GuardarCliente()
