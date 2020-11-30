@@ -30,13 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.button1 = new System.Windows.Forms.Button();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.DataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DataPrestamos = new ProyectoBiblioteca.DataPrestamos();
+            this.button1 = new System.Windows.Forms.Button();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.DataTable1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataPrestamos)).BeginInit();
             this.SuspendLayout();
+            // 
+            // DataTable1BindingSource
+            // 
+            this.DataTable1BindingSource.DataMember = "DataTable1";
+            this.DataTable1BindingSource.DataSource = this.DataPrestamos;
+            // 
+            // DataPrestamos
+            // 
+            this.DataPrestamos.DataSetName = "DataPrestamos";
+            this.DataPrestamos.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button1
             // 
@@ -56,6 +66,7 @@
             this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.reportViewer1.BackColor = System.Drawing.Color.Teal;
             reportDataSource1.Name = "DataSet1";
             reportDataSource1.Value = this.DataTable1BindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
@@ -65,16 +76,6 @@
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.Size = new System.Drawing.Size(1163, 583);
             this.reportViewer1.TabIndex = 1;
-            // 
-            // DataTable1BindingSource
-            // 
-            this.DataTable1BindingSource.DataMember = "DataTable1";
-            this.DataTable1BindingSource.DataSource = this.DataPrestamos;
-            // 
-            // DataPrestamos
-            // 
-            this.DataPrestamos.DataSetName = "DataPrestamos";
-            this.DataPrestamos.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // FrmReportePrestamos
             // 

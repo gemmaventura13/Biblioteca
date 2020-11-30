@@ -87,6 +87,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataPrestamos.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSetDevolucionLibros.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetDevolucionLibros.xsd</DependentUpon>
+    </Compile>
     <Compile Include="FrmConsultasClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,17 +116,23 @@
     <Compile Include="FrmAcercaDe.designer.cs">
       <DependentUpon>FrmAcercaDe.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmLibrosDevolucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLibrosDevolucion.Designer.cs">
+      <DependentUpon>FrmLibrosDevolucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrestamosLibros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrestamosLibros.Designer.cs">
+      <DependentUpon>frmPrestamosLibros.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmReporteLectura.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmReporteLectura.Designer.cs">
       <DependentUpon>FrmReporteLectura.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmPrestamos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmPrestamos.designer.cs">
-      <DependentUpon>FrmPrestamos.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmReportePrestamos.cs">
       <SubType>Form</SubType>
@@ -162,6 +173,7 @@
       <DependentUpon>FrmRegistroCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Validacion.cs" />
+    <EmbeddedResource Include="DevolucionLibro.rdlc" />
     <EmbeddedResource Include="FrmConsultasClientes.resx">
       <DependentUpon>FrmConsultasClientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -174,11 +186,14 @@
     <EmbeddedResource Include="FrmAcercaDe.resx">
       <DependentUpon>FrmAcercaDe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmLibrosDevolucion.resx">
+      <DependentUpon>FrmLibrosDevolucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrestamosLibros.resx">
+      <DependentUpon>frmPrestamosLibros.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmReporteLectura.resx">
       <DependentUpon>FrmReporteLectura.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmPrestamos.resx">
-      <DependentUpon>FrmPrestamos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmReportePrestamos.resx">
       <DependentUpon>FrmReportePrestamos.cs</DependentUpon>
@@ -203,6 +218,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="ReportDevolucionLibros.rdlc" />
     <EmbeddedResource Include="ReporteLectura.rdlc" />
     <None Include="DataPrestamos.xsc">
       <DependentUpon>DataPrestamos.xsd</DependentUpon>
@@ -214,6 +230,17 @@
     </None>
     <None Include="DataPrestamos.xss">
       <DependentUpon>DataPrestamos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetDevolucionLibros.xsc">
+      <DependentUpon>DataSetDevolucionLibros.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetDevolucionLibros.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetDevolucionLibros.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetDevolucionLibros.xss">
+      <DependentUpon>DataSetDevolucionLibros.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

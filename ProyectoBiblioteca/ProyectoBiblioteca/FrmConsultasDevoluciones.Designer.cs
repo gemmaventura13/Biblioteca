@@ -28,14 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnSalir = new System.Windows.Forms.Button();
             this.dgvDevolucion = new System.Windows.Forms.DataGridView();
-            this.Folio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NombreLibro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FechaDevolucion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CondicionesLibro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnCargar = new System.Windows.Forms.Button();
@@ -62,21 +57,15 @@
             this.dgvDevolucion.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvDevolucion.BackgroundColor = System.Drawing.Color.DarkCyan;
             this.dgvDevolucion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDevolucion.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDevolucion.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvDevolucion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDevolucion.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Folio,
-            this.NombreCliente,
-            this.NombreLibro,
-            this.FechaDevolucion,
-            this.CondicionesLibro});
             this.dgvDevolucion.EnableHeadersVisualStyles = false;
             this.dgvDevolucion.Location = new System.Drawing.Point(40, 105);
             this.dgvDevolucion.Name = "dgvDevolucion";
@@ -84,34 +73,6 @@
             this.dgvDevolucion.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDevolucion.Size = new System.Drawing.Size(651, 432);
             this.dgvDevolucion.TabIndex = 9;
-            // 
-            // Folio
-            // 
-            this.Folio.HeaderText = "FOLIO";
-            this.Folio.Name = "Folio";
-            this.Folio.Width = 65;
-            // 
-            // NombreCliente
-            // 
-            this.NombreCliente.HeaderText = "NOMBRE DEL CLIENTE";
-            this.NombreCliente.Name = "NombreCliente";
-            // 
-            // NombreLibro
-            // 
-            this.NombreLibro.HeaderText = "NOMBRE DEL LIBRO";
-            this.NombreLibro.Name = "NombreLibro";
-            // 
-            // FechaDevolucion
-            // 
-            this.FechaDevolucion.HeaderText = "FECHA DE DEVOLUCIÓN";
-            this.FechaDevolucion.Name = "FechaDevolucion";
-            this.FechaDevolucion.Width = 147;
-            // 
-            // CondicionesLibro
-            // 
-            this.CondicionesLibro.HeaderText = "CONDICIONES DEL LIBRO";
-            this.CondicionesLibro.Name = "CondicionesLibro";
-            this.CondicionesLibro.Width = 124;
             // 
             // btnBuscar
             // 
@@ -125,6 +86,7 @@
             this.btnBuscar.TabIndex = 8;
             this.btnBuscar.Text = "BUSCAR";
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtBuscar
             // 
@@ -164,6 +126,7 @@
             this.Name = "FrmConsultasDevoluciones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CONSULTAS DEVOLUCIONES";
+            this.Load += new System.EventHandler(this.FrmConsultasDevoluciones_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDevolucion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -176,11 +139,6 @@
         private System.Windows.Forms.DataGridView dgvDevolucion;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtBuscar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Folio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NombreCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NombreLibro;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FechaDevolucion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CondicionesLibro;
         private System.Windows.Forms.Button btnCargar;
     }
 }

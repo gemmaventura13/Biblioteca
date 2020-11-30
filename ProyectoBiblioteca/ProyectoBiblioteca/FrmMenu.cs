@@ -64,7 +64,7 @@ namespace ProyectoBiblioteca
 
         private void préstamoInternoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmPrestamos prestamos = new FrmPrestamos();
+            frmPrestamosLibros prestamos = new frmPrestamosLibros();
             prestamos.Show();
         }
 
@@ -100,8 +100,11 @@ namespace ProyectoBiblioteca
 
         private void préstamosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmPrestamos Prestamos = new FrmPrestamos();
-            Prestamos.Show();
+            /*FrmPrestamos Prestamos = new FrmPrestamos();
+            Prestamos.Show();*/
+
+            frmPrestamosLibros prestamos = new frmPrestamosLibros();
+            prestamos.Show();
         }
 
         private void préstamoInternoToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -115,6 +118,12 @@ namespace ProyectoBiblioteca
             FrmReporteLectura lectura = new FrmReporteLectura();
             lectura.Show();
 
+        }
+
+        private void dEVOLUCIONESToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            FrmLibrosDevolucion devolucion = new FrmLibrosDevolucion();
+            devolucion.Show();
         }
 
        

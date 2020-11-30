@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using Microsoft.Reporting.WinForms;
 
+
 namespace ProyectoBiblioteca
 {
     public partial class FrmReportePrestamos : Form
@@ -30,21 +31,26 @@ namespace ProyectoBiblioteca
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string peticion = "SELECT IdCliente, NombreCli, NumPrestamo, NombreLibro, IdLibro, FechaRetiro, HoraPrestamo FROM prestamosinternos";
-            MySqlConnection cn = new MySqlConnection(connstring);
-            DataTable dt = new DataTable();
-            MySqlDataAdapter da = new MySqlDataAdapter(peticion, cn);
-            da.Fill(dt);
 
+            try
+            {
+                string peticion = "SELECT IdPrestamo, Fecha, CantidadLibro, IdCliente FROM prestamos ORDER BY IdPrestamo";
+                MySqlConnection cn = new MySqlConnection(connstring);
+                DataTable dt = new DataTable();
+                MySqlDataAdapter da = new MySqlDataAdapter(peticion, cn);
+                da.Fill(dt);
 
+                reportViewer1.LocalReport.DataSources.Clear();
 
-            reportViewer1.LocalReport.DataSources.Clear();
+                ReportDataSource rp = new ReportDataSource("DataSet1", dt);
+                reportViewer1.LocalReport.DataSources.Add(rp);
+                reportViewer1.RefreshReport();
+            }
+            catch 
+            {
+                MessageBox.Show("No hay datos capturados");
+            }
 
-
-
-            ReportDataSource rp = new ReportDataSource("DataSet1", dt);
-            reportViewer1.LocalReport.DataSources.Add(rp);
-            reportViewer1.RefreshReport();
         }
         
     }
