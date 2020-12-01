@@ -70,7 +70,7 @@
             reportDataSource1.Name = "DataSet1";
             reportDataSource1.Value = this.DataTable1BindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "ProyectoBiblioteca.Report2.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "ProyectoBiblioteca.ReportPrestamos.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(13, 98);
             this.reportViewer1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.reportViewer1.Name = "reportViewer1";

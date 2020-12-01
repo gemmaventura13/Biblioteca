@@ -34,7 +34,7 @@ namespace ProyectoBiblioteca
 
             try
             {
-                string peticion = "SELECT IdPrestamo, Fecha, CantidadLibro, IdCliente FROM prestamos ORDER BY IdPrestamo";
+                string peticion = "SELECT TituloLibro, FechaPrestamo FROM historialprestamos";
                 MySqlConnection cn = new MySqlConnection(connstring);
                 DataTable dt = new DataTable();
                 MySqlDataAdapter da = new MySqlDataAdapter(peticion, cn);

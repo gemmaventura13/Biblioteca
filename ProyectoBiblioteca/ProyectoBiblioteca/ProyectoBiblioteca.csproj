@@ -217,7 +217,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="ReportPrestamos.rdlc" />
     <EmbeddedResource Include="ReportDevolucionLibros.rdlc" />
     <EmbeddedResource Include="ReporteLectura.rdlc" />
     <None Include="DataPrestamos.xsc">
