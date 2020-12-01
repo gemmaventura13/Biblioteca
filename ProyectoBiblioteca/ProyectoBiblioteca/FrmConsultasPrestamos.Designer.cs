@@ -125,6 +125,7 @@
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.Size = new System.Drawing.Size(154, 27);
             this.txtFecha.TabIndex = 32;
+            this.txtFecha.Value = new System.DateTime(2000, 1, 1, 12, 7, 0, 0);
             // 
             // FrmConsultasPrestamos
             // 

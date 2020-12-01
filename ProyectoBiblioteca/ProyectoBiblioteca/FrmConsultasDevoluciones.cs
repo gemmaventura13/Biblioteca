@@ -73,7 +73,7 @@ namespace ProyectoBiblioteca
                 string peticion;
                 string fecha = Convert.ToDateTime(txtFecha.Text).ToString("yyyy/MM/dd");
 
-                peticion = "SELECT TituloLibro as 'TITULO LIBRO', NombreCliente as 'NOMBRE CLIENTE', FechaDevolucion as 'FECHA' FROM devoluciones WHERE NombreCliente LIKE ('%" + Convert.ToString(txtBuscar.Text.Trim()) + "%') OR IdMovDevolucion LIKE ('%" + txtBuscar.Text.Trim() + "%') OR FechaDevolucion = '" + fecha + "' ; ";
+                peticion = "SELECT TituloLibro as 'TITULO LIBRO', NombreCliente as 'NOMBRE CLIENTE', FechaDevolucion as 'FECHA' FROM devoluciones WHERE (NombreCliente LIKE ('%" + Convert.ToString(txtBuscar.Text.Trim()) + "%') OR TituloLibro LIKE ('%" + txtBuscar.Text.Trim() + "%') OR FechaDevolucion = '" + fecha + "') OR (NombreCliente LIKE ('%" + Convert.ToString(txtBuscar.Text.Trim()) + "%') OR TituloLibro LIKE ('%" + txtBuscar.Text.Trim() + "%') AND FechaDevolucion = '" + fecha + "'); ";
 
                 try
                 {
