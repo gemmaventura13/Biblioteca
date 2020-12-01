@@ -16,6 +16,7 @@ namespace ProyectoBiblioteca
     public partial class FrmRegistroCliente : Form
     {
         public static string connstring = "Server=localhost;User id=root;Database=biblioteca;password=;Convert Zero Datetime=True";
+        int bandera = 0;
 
         Validacion v = new Validacion();
 
@@ -27,8 +28,45 @@ namespace ProyectoBiblioteca
         private void Form1_Load(object sender, EventArgs e)
         {
             txtHora.Text = DateTime.Now.ToShortTimeString();
-            txtFecha.Text = DateTime.Now.ToLongDateString();
+            txtFecha.Text = DateTime.Now.ToShortDateString();
 
+        }
+
+        private void buscarCliente()
+        {
+            bandera = 0;
+            string peticion; //Variable para peticion SQL
+            DataTable tabla = new DataTable();
+            peticion = "SELECT IdUsuario, Nombre, Apellidos, Edad, Sexo, Direccion, Email, FechaNac, Telefono FROM usuarios WHERE (IdUsuario ='" + txtIdUsuario.Text + "' )";
+
+            try
+            {
+                MySql.Data.MySqlClient.MySqlConnection conexion = new MySql.Data.MySqlClient.MySqlConnection(connstring);
+                conexion.Open();
+                MySql.Data.MySqlClient.MySqlDataAdapter comando = new MySql.Data.MySqlClient.MySqlDataAdapter(peticion, conexion);
+
+                comando.Fill(tabla);
+
+                if (tabla.Rows.Count > 0)
+                {
+                    txtNombre.Text = tabla.Rows[0][1].ToString();
+                    txtApellidos.Text = tabla.Rows[0][2].ToString();
+                    txtEdad.Text = tabla.Rows[0][3].ToString();
+                    cmbSexo.Text = tabla.Rows[0][4].ToString();
+                    txtDireccion.Text = tabla.Rows[0][5].ToString();
+                    txtEmail.Text = tabla.Rows[0][6].ToString();
+                    txtFechaNacimiento.Text = tabla.Rows[0][7].ToString();
+                    txtTelefono.Text = tabla.Rows[0][8].ToString();
+                    bandera = 1;
+                }
+
+                conexion.Close();
+
+            }
+            catch
+            {
+
+            }
         }
 
         private void txtIdUsuario_KeyPress(object sender, KeyPressEventArgs e)
@@ -36,6 +74,7 @@ namespace ProyectoBiblioteca
             v.SoloNumeros(e);
             if (e.KeyChar == 13)
             {
+                buscarCliente();
                 txtNombre.Focus();
             }
         }
@@ -96,29 +135,110 @@ namespace ProyectoBiblioteca
             }
         }
 
+        private void limpiarCampos() 
+        {
+            txtIdUsuario.Text = "";
+            txtNombre.Text = "";
+            txtApellidos.Text = "";
+            txtDireccion.Text = "";
+            txtEmail.Text = "";
+            txtTelefono.Text = "";
+            txtEdad.Text = "";
+            cmbSexo.Text = "";
+        }
+
+        public void editarCliente()
+        {
+            string peticion;
+            string fechaNac = Convert.ToDateTime(txtFechaNacimiento.Text).ToString("yyyy/MM/dd");
+
+            peticion = "UPDATE usuarios SET Nombre ='" + txtNombre.Text + "', Apellidos ='" + txtApellidos.Text + "', Edad ='" + txtEdad.Text + "', Sexo ='"
+                + cmbSexo.Text + "', Direccion ='" + txtDireccion.Text + "', Email ='" + txtEmail.Text + "', FechaNac ='" + fechaNac + "', Telefono ='"
+                + txtTelefono.Text + "' WHERE IdUsuario = '" + txtIdUsuario.Text + "' ;";
+
+            try
+            {
+                MySql.Data.MySqlClient.MySqlConnection conexion = new MySql.Data.MySqlClient.MySqlConnection(connstring);//Principal.connstring);
+                conexion.Open();
+                MySql.Data.MySqlClient.MySqlCommand comando = new MySql.Data.MySqlClient.MySqlCommand(peticion, conexion);
+
+                comando.ExecuteNonQuery();
+                conexion.Close();
+            }
+            catch
+            {
+
+            }
+        }​​​​
+
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            if (bandera == 0)
+            {
+                string mensaje = "¿Quieres guardar los datos capturados?";
+                string tituloboton = "GUARDAR DATOS";
+                MessageBoxButtons botones = MessageBoxButtons.YesNo;
+                DialogResult result = MessageBox.Show(mensaje, tituloboton, botones, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    if (string.IsNullOrEmpty(txtIdUsuario.Text) || string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtApellidos.Text) || 
+                        string.IsNullOrEmpty(txtDireccion.Text) || string.IsNullOrEmpty(txtEmail.Text) || string.IsNullOrEmpty(txtTelefono.Text) ||
+                        string.IsNullOrEmpty(txtEdad.Text) || string.IsNullOrEmpty(cmbSexo.Text) )
+                    {
+                        MessageBox.Show("Te hace falta capturar algunos datos");
+                    }
+                    else
+                    {
+                        GuardarCliente();
+                        MessageBox.Show("SE HAN GUARDADO LOS DATOS CORRECTAMENTE");
+                        limpiarCampos();
+                        txtIdUsuario.Focus();
+                    }
+                }
+            }
+            else
+            {
+                string mensaje = "¿Quieres modificar los datos del registro?";
+                string tituloboton = "MODIFICAR DATOS";
+                MessageBoxButtons botones = MessageBoxButtons.YesNo;
+                DialogResult result = MessageBox.Show(mensaje, tituloboton, botones, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    if (string.IsNullOrEmpty(txtIdUsuario.Text) || string.IsNullOrEmpty(txtNombre.Text) || string.IsNullOrEmpty(txtApellidos.Text) ||
+                        string.IsNullOrEmpty(txtDireccion.Text) || string.IsNullOrEmpty(txtEmail.Text) || string.IsNullOrEmpty(txtTelefono.Text) ||
+                        string.IsNullOrEmpty(txtEdad.Text) || string.IsNullOrEmpty(cmbSexo.Text))
+                    {
+                        MessageBox.Show("Te hace falta capturar algunos datos");
+                    }
+                    else
+                    {
+                        editarCliente();
+                        MessageBox.Show("SE HAN MODIFICADO LOS DATOS CORRECTAMENTE");
+                        limpiarCampos();
+                        txtIdUsuario.Focus();
+                    }
+                }
+            }
 
-            GuardarCliente();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             string mensaje = "¿Quieres eliminar los datos?";
-            string tituloBoton = "Ventana Eliminar";
+            string tituloBoton = "VENTANA ELIMINAR";
             MessageBoxButtons botones = MessageBoxButtons.YesNo;
             DialogResult result = MessageBox.Show(mensaje, tituloBoton, botones, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
                 EliminarCliente();
             }
-            MessageBox.Show("SE HAN ELIMINADO LOS DATOS CORRECTAMENTE");
+            
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            string mensaje = "¿Esta seguro de cancelar los Datos?";
-            string tituloBoton = "Ventana Cancelar";
+            string mensaje = "¿Esta seguro de cancelar los datos?";
+            string tituloBoton = "VENTANA CANCELAR";
             MessageBoxButtons botones = MessageBoxButtons.YesNo;
             DialogResult result = MessageBox.Show(mensaje, tituloBoton, botones, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
@@ -175,7 +295,6 @@ namespace ProyectoBiblioteca
                         {
                             if (cmd.ExecuteNonQuery() > 0)
                             {
-                                MessageBox.Show("SE HAN GUARDADO LOS DATOS CORRECTAMENTE");
                                 return true;
                             }
 
@@ -213,6 +332,7 @@ namespace ProyectoBiblioteca
                 MySql.Data.MySqlClient.MySqlCommand comando = new MySql.Data.MySqlClient.MySqlCommand(peticion, conexion);
 
                 comando.ExecuteNonQuery();
+                MessageBox.Show("SE HAN ELIMINADO LOS DATOS CORRECTAMENTE");
                 conexion.Close();
             }
             catch

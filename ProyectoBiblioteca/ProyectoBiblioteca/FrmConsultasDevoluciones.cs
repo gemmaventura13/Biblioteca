@@ -31,7 +31,7 @@ namespace ProyectoBiblioteca
         {
             string peticion; //Variable para peticion SQL
 
-            peticion = "SELECT IdMovDevolucion as 'NÚMERO DEL MOVIMIENTO', Folio as 'FOLIO', IdLibro as 'CLAVE LIBRO', TituloLibro as 'TITULO LIBRO', IdCliente as 'CLAVE CLIENTE', NombreCliente as 'NOMBRE CLIENTE', FechaDevolucion as 'FECHA' FROM devoluciones ORDER BY IdMovDevolucion";
+            peticion = "SELECT TituloLibro as 'TITULO LIBRO', NombreCliente as 'NOMBRE CLIENTE', FechaDevolucion as 'FECHA' FROM devoluciones ORDER BY IdMovDevolucion";
 
             try
             {
@@ -51,9 +51,19 @@ namespace ProyectoBiblioteca
             }
         }
 
+        private void formateoDgvDevoluciones()
+        {
+            this.dgvDevolucion.EnableHeadersVisualStyles = false;
+            this.dgvDevolucion.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
+            this.dgvDevolucion.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            this.dgvDevolucion.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            this.dgvDevolucion.ColumnHeadersDefaultCellStyle.Font = new Font("Malgun Gothic", 12F, FontStyle.Bold);
+        }
+
         private void FrmConsultasDevoluciones_Load(object sender, EventArgs e)
         {
             cargarDevoluciones();
+            formateoDgvDevoluciones();
         }
 
         private void buscarDevolucion()
@@ -61,8 +71,9 @@ namespace ProyectoBiblioteca
             if (string.IsNullOrEmpty(txtBuscar.Text.Trim()) == false)
             {
                 string peticion;
+                string fecha = Convert.ToDateTime(txtFecha.Text).ToString("yyyy/MM/dd");
 
-                peticion = "SELECT IdMovDevolucion as 'NÚMERO DEL MOVIMIENTO', Folio as 'FOLIO', IdLibro as 'CLAVE LIBRO', TituloLibro as 'TITULO LIBRO', IdCliente as 'CLAVE CLIENTE', NombreCliente as 'NOMBRE CLIENTE', FechaDevolucion as 'FECHA' FROM devoluciones WHERE NombreCliente LIKE ('%" + Convert.ToString(txtBuscar.Text.Trim()) + "%') OR IdMovDevolucion LIKE ('%" + txtBuscar.Text.Trim() + "%') ";
+                peticion = "SELECT TituloLibro as 'TITULO LIBRO', NombreCliente as 'NOMBRE CLIENTE', FechaDevolucion as 'FECHA' FROM devoluciones WHERE NombreCliente LIKE ('%" + Convert.ToString(txtBuscar.Text.Trim()) + "%') OR IdMovDevolucion LIKE ('%" + txtBuscar.Text.Trim() + "%') OR FechaDevolucion = '" + fecha + "' ; ";
 
                 try
                 {
@@ -85,7 +96,9 @@ namespace ProyectoBiblioteca
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-        
+            buscarDevolucion();
         }
+
+
     }
 }

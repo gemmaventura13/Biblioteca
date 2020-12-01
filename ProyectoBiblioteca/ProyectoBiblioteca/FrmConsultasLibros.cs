@@ -83,14 +83,29 @@ namespace ProyectoBiblioteca
             }
         }
 
+        private void formateoDgvLibros()
+        {
+            this.dgvConsulta.EnableHeadersVisualStyles = false;
+            this.dgvConsulta.ColumnHeadersDefaultCellStyle.BackColor = Color.Black;
+            this.dgvConsulta.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            this.dgvConsulta.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            this.dgvConsulta.ColumnHeadersDefaultCellStyle.Font = new Font("Malgun Gothic", 12F, FontStyle.Bold);
+        }
+
         private void FrmConsultasLibros_Load(object sender, EventArgs e)
         {
             cargarLibros();
+            formateoDgvLibros();
         }
 
         private void btnCargar_Click(object sender, EventArgs e)
         {
             cargarLibros();
+        }
+
+        private void dgvConsulta_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

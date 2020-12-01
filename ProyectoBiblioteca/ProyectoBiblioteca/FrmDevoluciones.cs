@@ -24,7 +24,7 @@ namespace ProyectoBiblioteca
         {
             string peticion; //Variable para peticion SQL
 
-            peticion = "SELECT IdMovPrestamo as 'NÚMERO DEL MOVIMIENTO', FolioPrestamo as 'FOLIO', IdLibro as 'CLAVE DEL LIBRO', TituloLibro as 'TÍTULO DEL LIBRO', IdCliente as 'CLAVE DEL CLIENTE', NombreCliente as 'NOMBRE DEL CLIENTE' FROM movprestamos ORDER BY IdMovPrestamo";
+            peticion = "SELECT FolioPrestamo as 'FOLIO', IdCliente as 'CLAVE CLIENTE', NombreCliente as 'NOMBRE DEL CLIENTE', IdLibro as 'CLAVE LIBRO', TituloLibro as 'TÍTULO DEL LIBRO' FROM movprestamos ORDER BY IdMovPrestamo";
 
             try
             {
@@ -122,7 +122,7 @@ namespace ProyectoBiblioteca
             {
                 string peticion;
 
-                peticion = "SELECT IdPMovPrestamo as 'NÚMERO DEL MOVIMIENTO', FolioPrestamo as 'FOLIO', IdLibro as 'CLAVE DEL LIBRO', TituloLibro as 'TÍTULO DEL LIBRO', IdCliente as 'CLAVE DEL CLIENTE', NombreCliente as 'NOMBRE DEL CLIENTE' FROM movprestamos WHERE NombreCliente LIKE ('%" + Convert.ToString(txtBuscar.Text.Trim()) + "%') OR IdPrestamo LIKE ('%" + txtBuscar.Text.Trim() + "%') ";
+                peticion = "SELECT FolioPrestamo as 'FOLIO', IdCliente as 'CLAVE CLIENTE', NombreCliente as 'NOMBRE DEL CLIENTE', IdLibro as 'CLAVE LIBRO', TituloLibro as 'TÍTULO DEL LIBRO' FROM movprestamos WHERE NombreCliente LIKE ('%" + Convert.ToString(txtBuscar.Text.Trim()) + "%') OR TituloLibro LIKE ('%" + txtBuscar.Text.Trim() + "%') ";
 
                 try
                 {
@@ -150,10 +150,10 @@ namespace ProyectoBiblioteca
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            txtClaveCliente.Text = dgvMovPrestamos.Rows[dgvMovPrestamos.CurrentRow.Index].Cells[4].Value.ToString();
-            txtNombreCliente.Text = dgvMovPrestamos.Rows[dgvMovPrestamos.CurrentRow.Index].Cells[5].Value.ToString();
-            txtClaveLibro.Text = dgvMovPrestamos.Rows[dgvMovPrestamos.CurrentRow.Index].Cells[2].Value.ToString();
-            txtNombreLibro.Text = dgvMovPrestamos.Rows[dgvMovPrestamos.CurrentRow.Index].Cells[3].Value.ToString();
+            txtClaveCliente.Text = dgvMovPrestamos.Rows[dgvMovPrestamos.CurrentRow.Index].Cells[1].Value.ToString();
+            txtNombreCliente.Text = dgvMovPrestamos.Rows[dgvMovPrestamos.CurrentRow.Index].Cells[2].Value.ToString();
+            txtClaveLibro.Text = dgvMovPrestamos.Rows[dgvMovPrestamos.CurrentRow.Index].Cells[3].Value.ToString();
+            txtNombreLibro.Text = dgvMovPrestamos.Rows[dgvMovPrestamos.CurrentRow.Index].Cells[4].Value.ToString();
         }
 
         private void registrarDevolucion()
@@ -163,22 +163,26 @@ namespace ProyectoBiblioteca
 
         public void eliminarMovPrestamo()
         {
-            string peticion;
-
-            peticion = "DELETE FROM movprestamos WHERE IdLibro='" + txtClaveLibro.Text.Trim() + "';";
-
-            try
+            int filas = dgvDevoluciones.RowCount - 1;
+            for (int i = 0; i <= filas; i++)
             {
-                MySql.Data.MySqlClient.MySqlConnection conexion = new MySql.Data.MySqlClient.MySqlConnection(connstring);
-                conexion.Open();
-                MySql.Data.MySqlClient.MySqlCommand comando = new MySql.Data.MySqlClient.MySqlCommand(peticion, conexion);
+                string peticion;
 
-                comando.ExecuteNonQuery();
-                conexion.Close();
-            }
-            catch
-            {
+                peticion = "DELETE FROM movprestamos WHERE IdLibro='" + dgvDevoluciones[1, i].Value.ToString() +"';";
 
+                try
+                {
+                    MySql.Data.MySqlClient.MySqlConnection conexion = new MySql.Data.MySqlClient.MySqlConnection(connstring);
+                    conexion.Open();
+                    MySql.Data.MySqlClient.MySqlCommand comando = new MySql.Data.MySqlClient.MySqlCommand(peticion, conexion);
+
+                    comando.ExecuteNonQuery();
+                    conexion.Close();
+                }
+                catch
+                {
+
+                }
             }
         }
 
@@ -268,6 +272,7 @@ namespace ProyectoBiblioteca
         public void limpiaDgvDevoluciones()
         {
             dgvDevoluciones.Rows.Clear();
+            txtFolio.Text = Convert.ToString(Convert.ToInt64(txtFolio.Text) + 1);
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -317,7 +322,7 @@ namespace ProyectoBiblioteca
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
             limpiarCampos();
-            limpiaDgvDevoluciones();
+            dgvDevoluciones.Rows.Clear();
         }
 
         private void btnSalir_Click_1(object sender, EventArgs e)

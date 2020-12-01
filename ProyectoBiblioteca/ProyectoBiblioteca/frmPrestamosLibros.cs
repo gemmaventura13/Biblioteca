@@ -258,7 +258,7 @@ namespace ProyectoBiblioteca
                     }
                 }
                 limpiarCampos();
-                limpiaDgvPrestamo();
+                dgvPrestamo.Rows.Clear();
                 txtClaveCliente.Focus();
             }
         }
@@ -313,7 +313,7 @@ namespace ProyectoBiblioteca
         public void limpiaDgvPrestamo()
         {
             dgvPrestamo.Rows.Clear();
-            //txtFolio.Text = Convert.ToString(Convert.ToInt64(txtFolio.Text) + 1);
+            txtFolio.Text = Convert.ToString(Convert.ToInt64(txtFolio.Text) + 1);
         }
 
         public bool guardarPrestamo()
